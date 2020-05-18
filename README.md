@@ -1,3 +1,2 @@
-# portafoliojfranco
-Mi pagina web personal, en la cual incluyo mi cv
-<strong>ver enfasis</strong>
+<h1>Mi pagina personal</h1>
+<p> En esta pagina comparto mis conocimientos personales en el campo del desarrollo web</p>
