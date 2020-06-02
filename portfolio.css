@@ -479,7 +479,7 @@ background-size: 50px 50px;
 
 @media screen and (max-width:768px) {
     body {
-        border: 10px solid gray;
+        border: 10px solid red;
     }
 }
 
@@ -496,12 +496,3 @@ background-size: 50px 50px;
 }
 
 @media screen and (max-width:320px) {
-
-<<<<<<< HEAD
-}
-=======
-
-
-
->>>>>>> 6fda3ab6d2cb04b2dc90ff6409e181a89767c1a1
-
