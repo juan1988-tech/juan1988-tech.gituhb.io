@@ -477,5 +477,27 @@ background-image: url('social-media/platzi.png');
 background-size: 50px 50px;    
 }
 
+media screen and (max-width:768px) {
+    body {
+        border: 10px solid gray;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:480px) {
+
+}
+
+@media screen and (max-width:320px) {
+
+
+
 
 
