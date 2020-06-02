@@ -33,6 +33,7 @@ flex-direction: row;
 text-align: center;
 justify-content: space-between;
 align-items: center;
+flex-wrap: wrap;
 }
 
 .navegador
@@ -94,7 +95,8 @@ flex-direction: row;
 align-items: center; 
 justify-content: space-evenly; 
 margin-bottom: 20px;
-margin-top: 20px;  
+margin-top: 20px;
+flex-wrap: wrap;  
 }
 
 .title-link
@@ -233,6 +235,7 @@ color: #e3eaff;
 justify-content: space-between; 
 height: 350px; 
 align-items: center;
+flex-wrap: wrap;
 }
 
 .hero-2 p
@@ -268,13 +271,13 @@ flex-direction: column;
 display: flex;
 align-items: center;  
 justify-content: space-evenly;  
-width: 1200px;
 height: 400px;
 background-color: #1c1b1b;
 border-radius: 10px;
 flex-direction: row;
 color: #e3eaff;
 margin-bottom: 20px;
+flex-wrap: wrap;
 }
 
 .project-principal-firts
@@ -361,10 +364,9 @@ background-color: #02051f;
 color: #e3eaff;
 display: flex;
 justify-content: space-evenly;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 flex-direction: row;
 height: 400px;
-width: 1887px;
 align-items: center;
 line-height: 1em;
 letter-spacing: 0.1px;    
