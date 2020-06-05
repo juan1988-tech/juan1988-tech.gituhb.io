@@ -40,7 +40,7 @@ flex-wrap: wrap;
 {
 display: flex;
 flex-direction: row;
-width: 500px;
+width: auto;
 margin: 0px 20px 0px 20px; 
 }
 
@@ -268,7 +268,7 @@ flex-direction: column;
 display: flex;
 align-items: center;  
 justify-content: space-evenly;  
-height: 400px;
+height: auto;
 background-color: #1c1b1b;
 border-radius: 10px;
 flex-direction: row;
@@ -363,7 +363,8 @@ display: flex;
 justify-content: space-evenly;
 flex-wrap: wrap;
 flex-direction: row;
-height: 400px;
+height: 340px;
+width: 100%;
 align-items: center;
 line-height: 1em;
 letter-spacing: 0.1px;    
@@ -481,6 +482,11 @@ background-size: 50px 50px;
     {
     flex-wrap: nowrap;    
     }
+
+    .cabecera
+    {
+    justify-content: center;    
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -490,7 +496,9 @@ background-size: 50px 50px;
     flex-wrap: wrap;
     height: auto;
     justify-content: center;
-    text-align: justify;   
+    text-align: justify;
+    padding: 1em auto;
+    
     }
 
     .hero-1
@@ -504,10 +512,15 @@ background-size: 50px 50px;
     width: 100%;
     height: 50%;    
     }
+
+    .project-principal-1:first-child
+    {
+    margin-top: 1em;    
+    }
 }
 
 @media screen and (max-width:480px) {
-
+    
 }
 
 @media screen and (max-width:320px) {
