@@ -249,9 +249,13 @@ flex-wrap: nowrap;
 
 .hero-2
 {
-margin: 10px 50px 10px 50px;    
+margin: 10px 30px 10px 30px;    
 text-align: center;
-width: 50%;
+}
+
+.hero-2 p
+{
+text-align: justify;
 }
 
 .hero-1
@@ -512,7 +516,21 @@ background-size: 50px 50px;
     width: 100%;  
     margin: 0.5em 0em 0.5em 0em;
     }
-   
+
+    #hero{
+    display: block;
+    height: auto;
+    padding-bottom: 1em;    
+    }
+
+    #hero div{
+    max-width: 100%;
+    width: 100%;    
+    }
+
+    #hero div:nth-child(2){
+    width: auto;
+    }
 }
 
 @media screen and (max-width:480px) {
