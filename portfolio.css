@@ -33,18 +33,21 @@ justify-content: space-between;
 text-align: center;
 align-items: center;
 flex-wrap: wrap;
+height: 110px;
 }
 
 .navegador
 {
 display: flex;
 width: auto;
-margin: 10px 80px 10px 80px;
+margin: 0px 40px;
+height: inherit;
 }
 
 .navegador nav
 {
 justify-content: space-evenly; 
+height: inherit;
 }
 
 .cabecera div:first-child
@@ -60,7 +63,6 @@ margin: 0px 0px 0px 0px;
 .principal-title
 {
 margin: 10px 0px 10px 0px;
-font-size: 40px;
 color: #e3eaff;
 text-align: center;    
 }
@@ -210,19 +212,27 @@ justify-content: space-between;
 align-items: center;
 margin: 0px;
 padding: 0px;
+height: inherit;
 }
 
 
 .navegador ul li
 {
 list-style: none;
-margin: 0px 10px 0px 10px;    
+padding: 0px 10px 0px 10px; 
+height: 100%;   
 }
 
 .navegador ul li a
 {
+display: inline-flex;
 text-decoration: none;
 color: #e3eaff;       
+align-items: center;
+height: inherit;
+justify-content: center;
+/* border: 1px solid red; */
+width: 111px;
 }
 
 #hero
@@ -475,14 +485,10 @@ background-size: 50px 50px;
 }
 
 @media screen and (max-width:1024px) {
-    #hero 
-    {
-    flex-wrap: nowrap;    
-    }
-
-    .cabecera
-    {
-    justify-content: center;    
+    .cabecera{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;   
     }
 }
 
@@ -490,28 +496,23 @@ background-size: 50px 50px;
     .cabecera{
     display: block;
     text-align: center; 
+    height: auto;
     } 
 
     .navegador{
      display: block;
-     text-align: center;   
-    }
+     text-align: center;
+    }   
 
     .navegador nav ul{
-        display: block;
-        text-align: center; 
-    }
+        display: block;    
+        }
 
-    .navegador nav ul li{
-        display: block;
-        text-align: center; 
-        margin-top: 1em;
+    .navegador nav ul li a{
+    width: 100%;  
+    margin: 0.5em 0em 0.5em 0em;
     }
-
-    .navegador ul li a{
-        font-size: 1em;
-        
-    } 
+   
 }
 
 @media screen and (max-width:480px) {
@@ -519,3 +520,13 @@ background-size: 50px 50px;
 }
 
 @media screen and (max-width:320px) {
+    .cabecera div:first-child {
+        margin: 0em 1em 0em 1em;
+        font-size: 1em;
+    }
+
+    .cabecera div:first-child h2
+    {
+        font-size: 1em;
+    }
+}    
