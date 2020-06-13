@@ -268,6 +268,10 @@ background-image: url('images/fondo-portrait.jpg');
 background-size: 755px 300px;
 }
 
+.hero-1 figure img{
+border-radius: 50%;    
+}
+
 
 #proyectos
 {
@@ -489,14 +493,46 @@ background-size: 50px 50px;
 }
 
 @media screen and (max-width:1024px) {
+<<<<<<< HEAD
     .cabecera{
      display: flex;
      flex-direction: column;
      justify-content: space-evenly;   
+=======
+    #hero 
+    {
+    flex-wrap: nowrap;
+    margin: 0px;    
+    }
+
+    .cabecera
+    {
+    justify-content: center;    
+>>>>>>> hero
     }
 }
 
 @media screen and (max-width:767px) {
+
+    #hero{
+    display: block;    
+    height: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    }
+    .cabecera{
+     padding-bottom: 10px;   
+    }    
+    .hero-1
+    {
+    width: auto;    
+    }
+
+    .hero-2
+    {
+    width: auto;    
+    }
+
     .cabecera{
     display: block;
     text-align: center; 
@@ -538,6 +574,7 @@ background-size: 50px 50px;
 }
 
 @media screen and (max-width:320px) {
+<<<<<<< HEAD
     .cabecera div:first-child {
         margin: 0em 1em 0em 1em;
         font-size: 1em;
@@ -548,3 +585,32 @@ background-size: 50px 50px;
         font-size: 1em;
     }
 }    
+=======
+    .cabecera{
+    font-size: 12px;    
+    }
+    .cabecera div:first-child{
+    margin: 0px 0px 0px 0px;
+    }   
+
+    .cabecera-1 .principal-title{
+     font-size: 1.8em;   
+    }
+
+    .cabecera div:first-child h2{
+    font-size: 1.5em;   
+    }
+
+    .navegador nav ul li a{
+        font-size: 1em;    
+    }
+
+    .hero-2 .principal-title{
+        font-size: 1.8em;   
+       }
+
+    .hero-2 .p{
+        font-size: 1em;   
+       }   
+}
+>>>>>>> hero
