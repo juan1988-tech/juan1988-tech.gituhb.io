@@ -249,13 +249,20 @@ flex-wrap: nowrap;
 
 .hero-2
 {
-margin: 10px 30px 10px 30px;    
+display: flex;
+flex-direction: column;
+justify-content: center;        
 text-align: center;
+width: 50%;
+height: inherit;
+background-image: url('images/cabecera-2.png');
+background-size: 100% 100%;
 }
 
 .hero-2 p
 {
-text-align: justify;
+text-align: center;
+margin: 1em 2em 1em 2em;
 }
 
 .hero-1
@@ -263,9 +270,9 @@ text-align: justify;
 display: flex;
 align-items: center;
 width: 50%;
-height: 100%;
-background-image: url('images/fondo-portrait.jpg'); 
-background-size: 755px 300px;
+height: inherit;
+background-image: url('images/cabecera-1.png'); 
+background-size: 100% 350px;
 }
 
 .hero-1 figure img{
@@ -493,12 +500,6 @@ background-size: 50px 50px;
 }
 
 @media screen and (max-width:1024px) {
-<<<<<<< HEAD
-    .cabecera{
-     display: flex;
-     flex-direction: column;
-     justify-content: space-evenly;   
-=======
     #hero 
     {
     flex-wrap: nowrap;
@@ -508,7 +509,6 @@ background-size: 50px 50px;
     .cabecera
     {
     justify-content: center;    
->>>>>>> hero
     }
 }
 
@@ -570,22 +570,15 @@ background-size: 50px 50px;
 }
 
 @media screen and (max-width:480px) {
-    
+ .hero-1{
+     background-size: auto;
+ }   
+ .hero-2{
+    background-size: auto;
+ }
 }
 
 @media screen and (max-width:320px) {
-<<<<<<< HEAD
-    .cabecera div:first-child {
-        margin: 0em 1em 0em 1em;
-        font-size: 1em;
-    }
-
-    .cabecera div:first-child h2
-    {
-        font-size: 1em;
-    }
-}    
-=======
     .cabecera{
     font-size: 12px;    
     }
@@ -613,4 +606,3 @@ background-size: 50px 50px;
         font-size: 1em;   
        }   
 }
->>>>>>> hero
