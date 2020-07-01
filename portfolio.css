@@ -29,11 +29,11 @@ header
 background-color: #02051f; 
 color:#e3eaff;
 display: flex;
+flex-direction: row;
 justify-content: space-between;
 text-align: center;
 align-items: center;
-flex-wrap: wrap;
-height: 110px;
+height: 150px;
 }
 
 .navegador
@@ -396,27 +396,16 @@ letter-spacing: 0.1px;
 
 footer div
 {
-height: 60%;  
+height: auto;  
 display: flex;
-flex-direction: column;
+flex-direction: row;
 justify-content: space-evenly; 
 align-items: center;
 }
 
 footer div:first-child 
 {
-justify-content: space-evenly;
-}
-
-footer div h4
-{
-text-align: center;    
-margin: 0px;
-}
-
-footer div h5
-{
-margin: 5px 100px 5px 100px;    
+display: block;
 }
 
 footer div button
@@ -429,17 +418,10 @@ footer div input
 width: 210px;
 }
 
-footer div h3
-{
-font-size: 15px;    
-} 
-
 footer div:nth-child(2)
 {
-display: flex;
-flex-direction: column;
-text-align: center;
-align-items: center;    
+display: block;
+text-align: center; 
 }
 
 footer div a
@@ -450,10 +432,8 @@ color: #EDEDED;
 
 .redes-sociales
 {
-display: flex;
-flex-direction: row;    
-flex-wrap: nowrap;
-align-items: center;
+display: inline-flex;
+flex-direction: row;
 }
 
 .redes-sociales a:first-child
@@ -499,17 +479,87 @@ background-image: url('social-media/platzi.png');
 background-size: 50px 50px;    
 }
 
-@media screen and (max-width:1024px) {
-    #hero 
-    {
-    flex-wrap: nowrap;
-    margin: 0px;    
-    }
+.container{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ height: 350px;
+ width: 100%;   
+}
 
-    .cabecera
-    {
-    justify-content: center;    
-    }
+.retrato{
+display: flex;
+justify-content: center;   
+}
+
+
+.retrato-1{
+background-image: url('images/retrato-1.png');    
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: flex; 
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+color: white;
+}
+
+.retrato-1 h1{
+margin: 0px;   
+}
+
+.retrato-2{
+background-image: url('images/retrato-2.png');    
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: flex; 
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+color: white;
+}
+    
+.retrato-2 h1{
+ margin: 0px;   
+}
+
+.retrato-1 a{
+padding: 16px 16px 16px 16px;
+margin: 10px;
+border: 1px solid white;
+border-radius: 5px;    
+}
+
+.retrato-2 a{
+padding: 16px 16px 16px 16px;
+margin: 10px;
+border: 1px solid white;
+border-radius: 5px;    
+}
+
+.retrato-3{
+background-image: url('images/retrato-3.png');    
+background-size: 100% 100%;
+background-repeat: no-repeat;
+display: flex; 
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+color: white;
+}
+        
+.retrato-3 h1{
+margin: 0px;   
+}
+
+.retrato-3 a{
+padding: 16px 16px 16px 16px;
+margin: 10px;
+border: 1px solid white;
+border-radius: 5px;    
+}
+
+@media screen and (max-width:1024px) {
+
 }
 
 @media screen and (max-width:767px) {
@@ -567,6 +617,21 @@ background-size: 50px 50px;
     #hero div:nth-child(2){
     width: auto;
     }
+
+    .container{
+    display: block;
+    height: auto;    
+    }
+
+    .retrato-1,.retrato-2,.retrato-3{
+    height: 350px;    
+    }
+
+    footer {
+    display: block;    
+    font-size: 12px;
+    height: auto;    
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -574,6 +639,15 @@ background-size: 50px 50px;
      background-size: auto;
  }   
  .hero-2{
+    background-size: auto;
+ }
+ .retrato-1{
+    background-size: auto;
+ }
+ .retrato-2{
+    background-size: auto; 
+ }
+ .retrato-3{
     background-size: auto;
  }
 }
@@ -604,5 +678,38 @@ background-size: 50px 50px;
 
     .hero-2 .p{
         font-size: 1em;   
-       }   
+       }
+    #proyectos{
+     width: 98%; 
+    }   
+  
+    .project-principal{
+    display: block;
+    text-align: center;    
+    }
+
+    .principal-title-2{
+    font-size: 30px;    
+    }
+
+    .project-principal-1:first-child{
+    width: 80%;
+    margin: 10%;
+    background-size: 100% 350px;    
+    } 
+
+    .project-principal-2 {
+    display: block;
+    width: auto;
+    text-align: center;  
+    }
+
+    .principal-container{
+     display: inline-flex;   
+    }
+
+    .retrato-1 h1, .retrato-2 h1,
+    .retrato-3 h1{
+     text-align: center;   
+    }
 }
