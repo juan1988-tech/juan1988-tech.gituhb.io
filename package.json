@@ -1,0 +1,26 @@
+{
+  "name": "portafolio-cv",
+  "version": "1.0.0",
+  "description": "<h1>Mi pagina personal</h1>\r <p> En esta pagina comparto mis conocimientos personales en el campo del desarrollo web</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juan1988-tech/juan1988-tech.gituhb.io.git"
+  },
+  "author": "Juan Franco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juan1988-tech/juan1988-tech.gituhb.io/issues"
+  },
+  "homepage": "https://github.com/juan1988-tech/juan1988-tech.gituhb.io#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1"
+  },
+  "devDependencies": {
+    "postcss-preset-env": "^6.7.0"
+  }
+}
