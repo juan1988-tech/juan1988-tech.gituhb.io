@@ -428,6 +428,11 @@ color: #e3eaff;
     margin: 0;
 }
 
+.skills-section {
+    background-color:#3c3a3d;
+    height: 800px;
+}
+
 footer
 {
 background-color: #02051f; 
@@ -487,43 +492,6 @@ display: inline-flex;
 flex-direction: row;
 }
 
-.skills-brand
-{
-display: inline-flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-}
-
-.skills-animation{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;  
-}
-.skills-animation:hover #brand-html{
-    height: 150px;
-    width: 150px;
-}
-
-#brand-html{
-width: 50px;
-height: 50px;
-margin-left: 10px;
-background-size: 100% 100%; 
-transition: 1s 1s;
-/* border: 1px solid white; */
-}
-
-#brand-html:first-child{
-background-image: url('../../dev/social-media/html.png');    
-}
-#brand-html:nth-child(2){
-background-image: url('../../dev/social-media/css.png');
-}
-#brand-html:nth-child(3){
-background-image: url('../../dev/social-media/github.svg');
-}
 
 .redes-sociales a:first-child
 {
@@ -566,114 +534,6 @@ width: 50px;
 height: 50px;
 background-image: url('../../dev/social-media/platzi.png');
 background-size: 50px 50px;    
-}
-
-.container{
- display: -ms-grid;
- display: grid;
- /* background-image: url('../../dev/images/container-fondo.png'); */
- background-size: 100%;
- -ms-grid-rows: 150px 384px 384px 384px;
- grid-template-rows: 150px 384px 384px 384px;
- -ms-grid-columns: 768px;
- grid-template-columns: 768px;
- /* grid-template: 200px 384px 384px 384px/ 200px 768px 768px 768px); */
- align-content: center;
- justify-content: space-evenly;
- grid-gap: 10px 10px;
- background-color: #1c1b1b;
- height: auto;  
- padding: 1em;   
-}
-
-.retrato{
-display: flex;
-justify-content: center;   
-}
-
-.retrato-1{
-background-image: url('../../dev/images/retrato-1.png');    
-background-size: cover;
-background-repeat: no-repeat;
-display: flex; 
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-color: white;
-border: 1px solid whitesmoke;
-border-radius: 5px;
-}
-
-
-.retrato h1{
-margin: 0px;   
-}
-
-.container div p{
- display: block;
- text-align: center;
- margin: 0 1.5em;
-}
-
-.retrato-2{
-background-image: url('../../dev/images/retrato-2.png');    
-background-size: 100% 100%;
-background-repeat: no-repeat;
-display: flex; 
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-color: white;
-border: 1px solid whitesmoke;
-border-radius: 5px;
-}
-    
-.retrato-2 h1{
- margin: 0px;   
-}
-
-.retrato-1 a{
-padding: 16px 16px 16px 16px;
-margin: 10px;
-border: 1px solid white;
-border-radius: 5px;
-color: white;  
-text-decoration: none;  
-}
-
-.retrato-2 a{
-padding: 16px 16px 16px 16px;
-margin: 10px;
-border: 1px solid white;
-border-radius: 5px;
-color: white;
-text-decoration: none;     
-}
-
-.retrato-3{
-background-image: url('../../dev/images/retrato-3.png');    
-background-size: 100% 100%;
-background-repeat: no-repeat;
-display: flex; 
-flex-direction: column;
-justify-content: space-evenly;
-align-items: center;
-color: white;
-border: 1px solid whitesmoke;
-border-radius: 5px;
-}
-        
-.retrato-3 h1{
-margin: 0px;   
-}
-
-.retrato-3 a{
-padding: 16px 16px 16px 16px;
-margin: 10px;
-border: 1px solid white;
-border-radius: 5px; 
-color: white; 
-text-decoration: none;   
 }
 
 #competencia{
@@ -789,19 +649,6 @@ display: block;
     width: auto;
     }
 
-    .container{
-    display: block;
-    height: auto; 
-    padding: 0;   
-    }
-
-    .retrato-1,.retrato-2,.retrato-3{
-    height: 350px; 
-    border: 0;
-    border-radius: 0;
-    box-shadow: 0;  
-    }
-
     footer {
     display: block;    
     font-size: 12px;
@@ -815,18 +662,6 @@ display: block;
         height: auto;
     }    
 
-    .skills-brand{
-        display: flex;
-        padding: 1em 0 1em 0; 
-    }
-
-    .container {
-        background-image: none; 
-    } 
-
-    .skills-animation{
-        display: flex;
-    }
     #brand-html{
     width: 100px;
     height: 100px;
@@ -863,15 +698,7 @@ display: block;
  .hero-2{
     background-size: auto;
  }
- .retrato-1{
-    background-size: auto;
- }
- .retrato-2{
-    background-size: auto; 
- }
- .retrato-3{
-    background-size: auto;
- }
+
  #brand-html{
      width: 50px;
      height: 50px;
@@ -935,11 +762,6 @@ display: block;
 
     .principal-container{
      display: inline-flex;   
-    }
-
-    .retrato-1 h1, .retrato-2 h1,
-    .retrato-3 h1{
-     text-align: center;   
     }
 }
 
