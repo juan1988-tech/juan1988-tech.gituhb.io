@@ -34,6 +34,7 @@ justify-content: space-between;
 text-align: center;
 align-items: center;
 height: 150px;
+box-shadow: 80px 80px 80px 80px rgba(255, 255, 255, 1);
 }
 
 .navegador
@@ -50,37 +51,46 @@ justify-content: space-evenly;
 height: inherit;
 }
 
-.cabecera div:first-child
+.cabecera-1
 {
-margin: 10px 80px 10px 80px;    
-}
-
-.cabecera div:first-child h1,h2
-{
-margin: 0px 0px 0px 0px;    
+margin: 0em 5em;    
 }
 
 .principal-title
 {
+color: #e3eaff;
+text-align: center;
+font-size: 2.5em; 
+margin : 0px;
+}
+
+.header-title{
 margin: 10px 0px 10px 0px;
 color: #e3eaff;
 text-align: center;
-background-image: none;    
+font-size: 1.5em; 
 }
 
+.header-second-title{
+    color: #990202;
+    font-size: 1em; 
+    text-align: center;     
+}
 .principal-title-2
 {
 margin: 10px 0px 10px 0px;
 font-size: 40px;
-color: #51015c;
+color: #990202;
 text-align: center; 
 background-image: none;
 }
 
-.cabecera h2
+.second-title
 {
 color: #990202;
-font-size: 30px;    
+font-size: 2em; 
+text-align: center;
+margin : 0px;   
 }
 
 #skills{
@@ -101,46 +111,6 @@ font-size: 30px;
   /* grid-gap: 10px; */
 }
 
-.skills-1-branding{
- background-image: url('../../dev/images/branding.png');   
-}
-
-.skills-2-branding{
-    background-image: url('../../dev/images/gestion-tiempo.png');   
-}
-
-.skills-3-branding{
-    background-image: url('../../dev/images/finanzas-f.png');
-}
-
-.skills-4-branding{
-    background-image: url('../../dev/images/profesion-futuro.png');
-}
-
-.skills-5-branding{
-    background-image: url('../../dev/images/freelance.png');
-}
-.skills-1-frontend{
-    background-image: url('../../dev/images/programar.png');
-}
-.skills-2-frontend{
-    background-image: url('../../dev/images/web-photo.png');
-}
-.skills-3-frontend{
-    background-image: url('../../dev/images/git-image.png');
-}
-.skills-4-frontend{
-    background-image: url('../../dev/images/grid-image.png');
-}
-.skills-5-frontend{
-    background-image: url('../../dev/images/responsive-find.png');
-}
-.skills-6-frontend{
-    background-image: url('../../dev/images/programm.png');
-}
-.skill-1-comunication {
-    background-image: url('../../dev/images/youtube.png')
-}
 
 .branding-item:first-child{
  -ms-grid-column: 1;
@@ -192,21 +162,6 @@ margin-bottom: 10px;
 text-decoration: none;
 }
 
-#conocimientos{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background-image: url('../../dev/images/container-fondo-1.png');
-    background-size: 100%;
-}
-
-.diploma
-{
-display: flex;
-align-items: center;
-justify-content: center;    
-}
-
 .navegador nav ul
 {
 display: flex;
@@ -242,262 +197,90 @@ color: #990202;
 transition-duration: 0.5s;
 }
 
-
 #hero
 {
-display: flex;
-flex-direction: row;  
-background-color: #1c1b1b;
+background-color: #151834;
 color: #e3eaff;
 justify-content: space-between; 
-height: 350px; 
-align-items: center;
-flex-wrap: nowrap;
-}
-
-.hero-2
-{
-display: flex;
-flex-direction: column;
-justify-content: center;        
-text-align: center;
-width: 50%;
-height: inherit;
-background-image: url('../../dev/images/cabecera-2.png');
-background-size: 100% 100%;
-}
-
-.hero-2 p
-{
-text-align: center;
-margin: 1em 2em 1em 2em;
-}
-
-.hero-1
-{
-display: flex;
-align-items: center;
-width: 50%;
-height: inherit;
-background-image: url('../../dev/images/cabecera-1.png'); 
-background-size: 100% 350px;
-}
-
-.hero-1 figure img{
-border-radius: 50%;    
-}
-
-
-#proyectos
-{
-width: 100vw;
 height: auto;
-background-image: url('../../dev/images/container-fondo.png');
-background-repeat: no-repeat;
-background-size: 100% auto;
+margin: 0px; 
+padding: 2em;
 display: flex;
-flex-direction: column;
 justify-content: center;
+text-align: center;
+flex-direction: column;
 align-items: center;
-padding-top: 2em;
-padding-bottom: 2em;
 }
 
-#project {
-background-color: rgba(28, 27, 27, 0.6);
-height: auto;
-width: 920px;
+#hero-photo{
 padding: 1em;
-margin: 1em;
-border: 0.5px solid white;
-border-radius: 10px; 
-display: -ms-grid; 
-display: grid;
-color: #e3eaff;
-grid-gap: 1em;
--ms-grid-columns: 25% 1em 20% 1em 1fr;
-    grid-template: 10% 10% 20% 10% 50%/ 25% 20% 1fr;
-    grid-template-areas: "p-title p-title p-title" 
-                     "p-image p-image t-description"
-                     "p-image p-image p-description"
-                     "p-download p-download t-knowledge"
-                     "p-download p-download p-skills"   
+margin: 0px;
+text-align: center;  
 }
 
-.p-title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    color: #e3eaff;
-    font-size: 26px;
-    grid-area: p-title;
+.hero-p{
+display: block;    
+width: 44em;
+text-align: center;
+}
+
+#proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#project{
+    /* border: 1px solid black; */
+    width: 40vw;
+    height: 530px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0,0.2);
+}
+.project-title-1{
+    font-size: 2em;
     text-align: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-}
-
-.t-description {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
-    color: #990202;
-    font-size: 16px;
-    grid-area: t-description;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row-align: center;
-        align-self: center;
-}
-
-.p-image {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: p-image;
-    -ms-grid-column-align: center;
-        justify-self: center;
-}
-
-.p-timing p {
     margin: 0px;
-    margin-bottom: 4px;
-}
-
-.p-description {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
-    grid-area: p-description;
-    text-align: justify;
     color: #e3eaff;
-    -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    padding: 1em 2em;
 }
-
-.t-knowledge {
-    -ms-grid-row: 7;
-    -ms-grid-column: 5;
-    color: #990202;
-    font-size: 16px;
-    grid-area: t-knowledge  ;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    -ms-grid-row-align: center;
-        align-self: center;
-}
-
-.p-download {
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
-    grid-area: p-download;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    color: #e3eaff;
+.project-title-2{
+    font-size: 1.5em;
     text-align: center;
+    margin: 0px;
+    color: #51015c;
 }
-
-.p-download a {
-    text-decoration: none; 
-    color:#990202;
-    font-size: 900;
-}
-
-.p-skills{
-    -ms-grid-row: 9;
-    -ms-grid-column: 5;
-    grid-area: p-skills;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 30px 10px 30px 10px 30px 10px 30px 10px 30px;
-    -ms-grid-columns: 35px 10px 1fr;
-        grid-template: repeat(5, 30px)/ 35px 1fr;
+.project-div-1{
+    height: 50%;
+    width: 100%;
     text-align: center;
-    grid-gap: 10px;
-    align-items: center;
-    justify-items: center;
+    background-color: #151834;
+    /* background-image: url('./../dev/images/container-fondo-1.png'); */
+    padding-top: 1em;
+}
+.project-div-2{
+    border: 1px solid #51015c;
+    width: 30vw;
+    display:flex;
+    flex-direction: column;
+    height: auto;
     justify-content: center;
-    -o-object-fit: cover;
-       object-fit: cover; 
-    width: 400px;
-    padding: 1em;   
-}
-
-.p-skills p {
-    margin: 0;
-}
-
-.skills-section {
-    background-color:#3c3a3d;
-    height: 800px;
-    display: -ms-grid;
-    display: grid; 
-    color:#e6e9eb;
-    text-align: center;
     align-items: center;
-    -ms-grid-columns: (1fr)[11];
-        grid-template: repeat(8, 1fr) / repeat(11, 1fr);
-        grid-template-areas: "prog-basica arrow-1 des-web . . . . . . . ."
-                         "prog-graph arrow-1 des-graph arrow-2 responsive . . . . . ."
-                         ". . . . . . . . . . .";
-    /* grid-gap: 1em; */
     padding: 1em;
+    margin: -5em;
+    background-color: #e6e9eb;
 }
-
-.skills-section div:first-child {
-
-    -ms-grid-row: 1;
-
-    -ms-grid-column: 1;
-
-    grid-area: prog-basica;
+.project-div-3{
+    margin-top: 7.5em;
 }
-
-.skills-section div:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    grid-area: des-web;
-}
-
-.skills-section div:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: prog-graph;
-}
-
-.skills-section div:nth-child(4) {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 2;
-    grid-area: arrow-1;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    border: 1px solid brown;
-}
-
-.skills-section div:nth-child(5) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    grid-area: des-graph;
-}
-
-.skills-section div:nth-child(6) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    grid-area: arrow-2;
-    -ms-grid-column-align: center;
-        justify-self: center;
-}
-
-.skills-section div:nth-child(7) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 5;
-    grid-area: responsive;
-    -ms-grid-column-align: center;
-        justify-self: center;
+.project-a{ 
+    color: #51015c;
+    border: 1px solid #51015c;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
 footer
@@ -557,34 +340,36 @@ color: #EDEDED;
 {
 display: inline-flex;
 flex-direction: row;
+width: 180px;
+justify-content: space-between;
 }
 
 
 .redes-sociales a:first-child
 {
-width: 50px;
-height: 50px;
+width: 40px;
+height: 40px;
 margin-left: 10px;
 background-image: url('../../dev/social-media/facebook.svg');
-background-size: 50px 50px;
+background-size: 40px 40px;
 }
 
 .redes-sociales a:nth-child(2)
 {
-width: 50px;
-height: 50px;
+width: 40px;
+height: 40px;
 margin-left: 10px;
 background-image: url('../../dev/social-media/instagram.svg');
-background-size: 50px 50px;
+background-size: 40px 40px;
 }
 
 .redes-sociales a:nth-child(3)
 {
-width: 50px;
-height: 50px;
+width: 40px;
+height: 40px;
 margin-left: 10px;
 background-image: url('../../dev/social-media/github.svg');
-background-size: 50px 50px;
+background-size: 40px 40px;
 }
 
 .information
@@ -609,19 +394,6 @@ background-size: 50px 50px;
     border: 1px solid black;
     background-color: grey ;
     }
-
-
-#body_2 header {
-    /* display: flex;
-    flex-direction: column; */
-    justify-content: center;
-    text-align: center;
-    height: auto;
-}
-
-#body_2 h3{
-    letter-spacing: .5px;
-}
 
 .branding-item:nth-child(2) a {
 cursor: pointer;
@@ -737,12 +509,6 @@ display: block;
     transition: none;
         /* border: 1px solid white; */
         }
-    #project {
-        display: block;
-        text-align: center;
-        height: auto;
-        width: 80%;
-    }
     .p-download{
         text-align: center;
         padding: 1em 2em;
