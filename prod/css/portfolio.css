@@ -5,7 +5,7 @@ h4,
 h5,
 h6
 {
-font-family: 'Oswald', sans-serif;  
+font-family: 'Oswald', sans-serif;
 }
 
 *
@@ -205,6 +205,10 @@ width: 44em;
 text-align: center;
 }
 
+.hero-p p{
+text-align: justify;
+}
+
 #proyectos{
     display: flex;
     flex-direction: row;
@@ -242,7 +246,6 @@ text-align: center;
     padding-top: 1em;
 }
 .project-div-2{
-    border: 1px solid #51015c;
     width: 30vw;
     display:flex;
     flex-direction: column;
@@ -252,6 +255,7 @@ text-align: center;
     padding: 1em;
     margin: -5em;
     background-color: #e6e9eb;
+    box-shadow: 2px 2px 2px 2px rgba(81, 1, 92,0.2);
 }
 .project-div-3{
     margin-top: 7.5em;
@@ -266,6 +270,7 @@ text-align: center;
 
 footer
 {
+padding: 2em 0;    
 background-color: #02051f; 
 color: #e3eaff;
 display: flex;
