@@ -22,6 +22,8 @@ list-style: none;
 body
 {
 background-color:#e6e9eb;   
+width: auto;
+margin: 0;
 }
 
 header
@@ -197,6 +199,18 @@ text-align: center;
 
 .hero-p p{
 text-align: justify;
+margin: 1em;
+}
+
+.hero-p h2{
+margin: .3em 0;
+}
+.social-media-title{
+    margin-bottom: .5em;
+}
+.social-media-title h2{
+    font-size: 1.5em;
+    margin: .5em;
 }
 
 #proyectos{
@@ -207,7 +221,7 @@ text-align: justify;
 #project{
     /* border: 1px solid black; */
     width: 40vw;
-    height: 530px;
+    height: 650px;
     margin: 1em;
     display: flex;
     flex-direction: column;
@@ -239,7 +253,7 @@ text-align: justify;
     width: 30vw;
     display:flex;
     flex-direction: column;
-    height: auto;
+    height: 250px;
     justify-content: center;
     align-items: center;
     padding: 1em;
@@ -304,12 +318,6 @@ footer div:nth-child(2)
 {
 display: block;
 text-align: center; 
-}
-
-footer div a
-{
-text-decoration: none;
-color: #EDEDED;    
 }
 
 .redes-sociales
@@ -406,7 +414,7 @@ display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2em 0px;
+    padding: 1em 0px;
 }
 #skills-image{
     margin: .5em;
@@ -416,11 +424,10 @@ display: block;
 }
 
 .list-skills{
-    /* background-color: #e3eaff; */
     display: grid;
-    width: 70vw;
-    grid-template-columns: 80px 1fr 80px 1fr;
-    grid-template-rows: repeat(10,50px);
+    width: 80vw;
+    grid-template-columns: 100px 1fr 100px 1fr;
+    grid-template-rows: repeat(10,70px);
     grid-template-areas: "wordpress wordpress-curso diseño diseño-curso"
                          "wordpress wordpress-fecha diseño diseño-fecha"
                          "javascript javascript-curso postcss postcss-curso"
@@ -437,9 +444,8 @@ display: block;
     color: #e3eaff;
     font-size: 1.5em;
     text-align: left;
-    text-indent: 1em;
     margin: 0px;
-    padding-top: .5em;
+    padding: .5em;
 }
 
 .list-skills h2{
@@ -591,12 +597,68 @@ display: block;
 }
 
 @media screen and (max-width:767px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 1em;
+    }
 
-    
+    .navegador nav ul{
+        flex-direction: column;
+    }
+    .navegador ul li{
+        padding: .5em;
+    }
+    .principal-title, .principal-title-2{
+        font-size: 2em;
+    }
+    .second-title{
+        font-size: 1.5em;
+    }
+    #proyectos{
+        flex-direction: column;
+        align-items: center;
+    }
+    #project{
+        width: 80vw;
+    }
+    .project-div-2{
+        width: 60vw;
+    }
+    .inline-skills{
+        padding: 1.5em;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .list-skills{
+        grid-template-columns: 120px 1fr;
+        grid-template-rows: repeat(10,70px);
+        grid-template-areas: "wordpress wordpress-curso"
+                             "wordpress wordpress-fecha"
+                             "diseño diseño-curso"
+                             "diseño diseño-fecha"
+                             "javascript javascript-curso"
+                             "javascript javascript-fecha"
+                             "postcss postcss-curso"
+                             "postcss postcss-fecha"
+                             "gridlayout gridlayout-curso"
+                             "gridlayout gridlayout-fecha"
+                             "responsive responsive-curso"
+                             "responsive responsive-fecha"
+                             "git git-curso"
+                             "git git-fecha"
+                             "desarrollo desarrollo-curso"
+                             "desarrollo desarrollo-fecha"
+                             "fund-ing fund-ing-curso"
+                             "fund-ing fund-ing-fecha"
+                             "programacion programacion-curso"
+                             "programacion programacion-fecha";
+    }
 }
 
 @media screen and (max-width:480px) {
- 
+    
  
 }
 
