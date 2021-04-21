@@ -1,0 +1,38 @@
+#hero {
+  background-color: #151834;
+  color: #e3eaff;
+  justify-content: space-between;
+  height: auto;
+  margin: 0px;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero-photo {
+  padding: 1em;
+  margin: 0px;
+  text-align: center;
+}
+
+.hero-p {
+  display: block;
+  width: 44em;
+  text-align: center;
+}
+
+.hero-p p {
+  text-align: justify;
+  margin: 1em;
+}
+
+.hero-p h2 {
+  margin: 0.3em 0;
+}
+
+.social-media-title {
+  margin-bottom: 0.5em;
+}

@@ -1,668 +1,807 @@
+@charset "UTF-8";
 h1,
 h2,
 h3,
 h4,
 h5,
-h6
-{
-font-family: 'Oswald', sans-serif;
+h6 {
+  font-family: "Oswald", sans-serif;
 }
 
-*
-{
-font-family: 'Roboto Condensed', sans-serif; 
+* {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 ol,
-ul
-{
-list-style: none;
+ul {
+  list-style: none;
 }
 
-body
-{
-background-color:#e6e9eb;   
-width: auto;
-margin: 0;
+body {
+  background-color: #e6e9eb;
+  width: auto;
+  margin: 0;
 }
 
-header
-{
-background-color: #02051f; 
-color:#e3eaff;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-text-align: center;
-align-items: center;
-height: 150px;
-box-shadow: 80px 80px 80px 80px rgba(255, 255, 255, 1);
+.title_white, .title_white_h4, .title_white_h3, .title_white__h2 {
+  margin: 10px 0px 10px 0px;
+  color: #e3eaff;
+  text-align: center;
+  font-size: 2.5em;
 }
 
-.navegador
-{
-display: flex;
-width: auto;
-margin: 0px 40px;
-height: inherit;
+.title_white__h2 {
+  font-size: 2em;
 }
 
-.navegador nav
-{
-justify-content: space-evenly; 
-height: inherit;
+.title_white_h3 {
+  font-size: 1.5em;
 }
 
-.cabecera-1
-{
-margin: 0em 5em;    
+.title_white_h4 {
+  font-size: 1em;
 }
 
-.principal-title
-{
-color: #e3eaff;
-text-align: center;
-font-size: 2.5em; 
-margin : 0px;
+.title_red, .title_red_h4, .title_red_h3, .title_red_h2 {
+  margin: 10px 0px 10px 0px;
+  color: #990202;
+  text-align: center;
+  font-size: 2.5em;
 }
 
-.header-title{
-margin: 10px 0px 10px 0px;
-color: #e3eaff;
-text-align: center;
-font-size: 1.5em; 
+.title_red_h2 {
+  font-size: 2em;
 }
 
-.header-second-title{
-    color: #990202;
-    font-size: 1em; 
-    text-align: center;     
-}
-.principal-title-2
-{
-margin: 10px 0px 10px 0px;
-font-size: 40px;
-color: #990202;
-text-align: center; 
-background-image: none;
+.title_red_h3 {
+  font-size: 1.5em;
 }
 
-.second-title
-{
-color: #990202;
-font-size: 2em; 
-text-align: center;
-margin : 0px;   
+.title_red_h4 {
+  font-size: 1em;
 }
 
-.branding-item:first-child{
- grid-column-start: 1;
- grid-column-end: 3;
+.social-media-title h2 {
+  font-size: 1.5em;
+  margin: 0.5em;
 }
 
-.branding-item:nth-child(2){
-grid-column-start: 1;
-grid-column-end: 2;
-grid-row-start: 2;
-grid-row-end: 4;
+.header-second-title {
+  color: #990202;
+  font-size: 1em;
+  text-align: center;
 }
 
-.branding-item:nth-child(3){
-grid-column-start: 2;
-grid-column-end: 3;
-grid-row-start: 2;
-grid-row-end: 4;
-color: white;
-text-align: justify;
-padding: 1em 1.5em 1em 1.5em;
+.list-skills h1 {
+  color: #e3eaff;
+  font-size: 1.5em;
+  text-align: left;
+  margin: 0px;
+  padding: 0.5em;
 }
 
-.title-diploma
-{
-color: #e3eaff;
-/* color: #990202; */
-font-size: 32px;
-text-align: center;           
-} 
-
-.title-link
-{
-color: #e3eaff;
-border: 1px solid #e3eaff;
-padding: 10px 10px 10px 10px; 
-border-radius: 5px;  
-margin-bottom: 10px;
-text-decoration: none;
+.list-skills h2 {
+  color: #990202;
+  font-size: 1em;
+  text-align: left;
+  text-indent: 1.5em;
+  margin: 0px;
+  padding-bottom: 0.5em;
 }
 
-.navegador nav ul
-{
-display: flex;
-flex-direction: row;
-justify-content: space-between;  
-align-items: center;
-margin: 0px;
-padding: 0px;
-height: inherit;
+header {
+  background-color: #02051f;
+  color: #e3eaff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  height: 150px;
+  box-shadow: 80px 80px 80px 80px white;
 }
 
-.navegador ul li
-{
-list-style: none;
-padding: 0px 10px 0px 10px; 
-height: 100%;   
+.cabecera-1 {
+  margin: 0em 5em;
 }
 
-.navegador ul li a
-{
-display: inline-flex;
-text-decoration: none;
-color: #e3eaff;       
-align-items: center;
-height: inherit;
-justify-content: center;
-/* border: 1px solid red; */
-width: 111px;
-}
-.navegador ul li a:hover
-{
-color: #990202;
-transition-duration: 0.5s;
+.navegador {
+  display: flex;
+  width: auto;
+  margin: 0px 40px;
+  height: inherit;
 }
 
-#hero
-{
-background-color: #151834;
-color: #e3eaff;
-justify-content: space-between; 
-height: auto;
-margin: 0px; 
-padding: 2em;
-display: flex;
-justify-content: center;
-text-align: center;
-flex-direction: column;
-align-items: center;
+.navegador nav {
+  justify-content: space-evenly;
+  height: inherit;
 }
 
-#hero-photo{
-padding: 1em;
-margin: 0px;
-text-align: center;  
+.navegador nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  height: inherit;
 }
 
-.hero-p{
-display: block;    
-width: 44em;
-text-align: center;
+.navegador ul li {
+  list-style: none;
+  padding: 0px 10px 0px 10px;
+  height: 100%;
 }
 
-.hero-p p{
-text-align: justify;
-margin: 1em;
+.navegador ul li a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #e3eaff;
+  align-items: center;
+  height: inherit;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 111px;
 }
 
-.hero-p h2{
-margin: .3em 0;
-}
-.social-media-title{
-    margin-bottom: .5em;
-}
-.social-media-title h2{
-    font-size: 1.5em;
-    margin: .5em;
+.navegador ul li a:hover {
+  color: #990202;
+  transition-duration: 0.5s;
 }
 
-#proyectos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-#project{
-    /* border: 1px solid black; */
-    width: 40vw;
-    height: 650px;
-    margin: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    position: relative;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0,0.2);
-}
-.project-title-1{
-    font-size: 2em;
-    text-align: center;
-    margin: 0px;
-    color: #990202;
-}
-.project-title-2{
-    font-size: 1.5em;
-    text-align: center;
-    margin: 0px;
-    color: #51015c;
-}
-.project-div-1{
-    height: 50%;
-    width: 100%;
-    text-align: center;
-    background-color: #151834;
-    background-image: url('../../dev/images/container-fondo-1.png');
-    padding-top: 1em;
-}
-.project-div-2{
-    width: 30vw;
-    display:flex;
-    flex-direction: column;
-    height: 250px;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    margin: -5em;
-    background-color: #e6e9eb;
-    box-shadow: 2px 2px 2px 2px rgba(81, 1, 92,0.2);
-}
-.project-div-3{
-    margin-top: 7.5em;
-}
-.project-a{ 
-    color: #51015c;
-    border: 1px solid #51015c;
-    border-radius: 5px;
-    padding: 1em;
-    margin-bottom: 1em;
+#hero {
+  background-color: #151834;
+  color: #e3eaff;
+  justify-content: space-between;
+  height: auto;
+  margin: 0px;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-footer
-{
-padding: 2em 0;    
-background-color: #02051f; 
-color: #e3eaff;
-display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-flex-direction: row;
-height: 340px;
-width: 100%;
-align-items: center;
-line-height: 1em;
-letter-spacing: 0.1px; 
-height: auto;   
+#hero-photo {
+  padding: 1em;
+  margin: 0px;
+  text-align: center;
 }
 
-footer div
-{
-height: auto;  
-display: flex;
-flex-direction: row;
-justify-content: space-evenly; 
-align-items: center;
-text-align: center;
+.hero-p {
+  display: block;
+  width: 44em;
+  text-align: center;
 }
 
-footer div:first-child 
-{
-display: block;
+.hero-p p {
+  text-align: justify;
+  margin: 1em;
 }
 
-footer div button
-{
-margin:0px;        
+.hero-p h2 {
+  margin: 0.3em 0;
 }
 
-footer div input
-{
-width: 210px;
+.social-media-title {
+  margin-bottom: 0.5em;
 }
 
-footer div:nth-child(2)
-{
-display: block;
-text-align: center; 
+#proyectos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.redes-sociales
-{
-display: inline-flex;
-flex-direction: row;
-width: 180px;
-justify-content: space-between;
+#project {
+  width: 40vw;
+  height: 650px;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-
-.redes-sociales a:first-child
-{
-width: 40px;
-height: 40px;
-margin-left: 10px;
-background-image: url('../../dev/social-media/facebook.svg');
-background-size: 40px 40px;
+.project-title-1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0px;
+  color: #990202;
 }
 
-.redes-sociales a:nth-child(2)
-{
-width: 40px;
-height: 40px;
-margin-left: 10px;
-background-image: url('../../dev/social-media/instagram.svg');
-background-size: 40px 40px;
+.project-title-2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0px;
+  color: #51015c;
 }
 
-.redes-sociales a:nth-child(3)
-{
-width: 40px;
-height: 40px;
-margin-left: 10px;
-background-image: url('../../dev/social-media/github.svg');
-background-size: 40px 40px;
+.project-div-1 {
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  background-image: url("../../dev/images/container-fondo-1.png");
+  padding-top: 1em;
 }
 
-.information
-{
-display: flex;
-flex-direction: column;
-align-items: center;  
-text-align: justify; 
+.project-div-2 {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: -5em;
+  background-color: #e6e9eb;
+  box-shadow: 2px 2px 2px 2px rgba(81, 1, 92, 0.2);
 }
 
-.platzi
-{
-width: 50px;
-height: 50px;
-background-image: url('../../dev/social-media/platzi.png');
-background-size: 50px 50px;    
+.project-div-3 {
+  margin-top: 7.5em;
 }
 
-#competencia{
-    height: 200px;
-    width: 400px;
-    border: 1px solid black;
-    background-color: grey ;
-    }
+.project-a {
+  color: #51015c;
+  border: 1px solid #51015c;
+  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+footer {
+  padding: 2em 0;
+  background-color: #02051f;
+  color: #e3eaff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 340px;
+  width: 100%;
+  align-items: center;
+  line-height: 1em;
+  letter-spacing: 0.1px;
+  height: auto;
+}
+
+footer div {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+footer div:first-child {
+  display: block;
+}
+
+footer div button {
+  margin: 0px;
+}
+
+footer div input {
+  width: 210px;
+}
+
+footer div:nth-child(2) {
+  display: block;
+  text-align: center;
+}
+
+.skills-section {
+  background-color: #151834;
+  color: #e3eaff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0px;
+}
+
+#skills-image {
+  margin: 0.5em;
+}
+
+.inline-skills {
+  display: inline-flex;
+}
+
+.list-skills {
+  display: grid;
+  display: grid;
+  width: 80vw;
+  grid-columns: 100px 1fr 100px 1fr;
+  grid-template-columns: 100px 1fr 100px 1fr;
+  grid-template-rows: repeat(10, 70px);
+  grid-template-areas: "wordpress wordpress-curso diseño diseño-curso" "wordpress wordpress-fecha diseño diseño-fecha" "javascript javascript-curso postcss postcss-curso" "javascript javascript-fecha postcss postcss-fecha" "gridlayout gridlayout-curso responsive responsive-curso" "gridlayout gridlayout-fecha responsive responsive-fecha" "git git-curso desarrollo desarrollo-curso" "git git-fecha desarrollo desarrollo-fecha" "fund-ing fund-ing-curso programacion programacion-curso" "fund-ing fund-ing-fecha programacion programacion-fecha";
+}
+
+#logo {
+  padding: 1em;
+  grid-column-align: center;
+  justify-self: center;
+  grid-row-align: center;
+  align-self: center;
+}
+
+#curso {
+  grid-row-align: center;
+  align-self: center;
+}
+
+#fecha {
+  align-self: center;
+}
+
+.logo-wordpress {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: wordpress;
+}
+
+.wordpress-curso {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: wordpress-curso;
+}
+
+.wordpress-date {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: wordpress-fecha;
+}
+
+.logo-diseño {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: diseño;
+}
+
+.diseño-curso {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: diseño-curso;
+}
+
+.diseño-date {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: diseño-fecha;
+}
+
+.logo-javascript {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: javascript;
+}
+
+.javascript-curso {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: javascript-curso;
+}
+
+.javascript-date {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: javascript-fecha;
+}
+
+.logo-postcss {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: postcss;
+}
+
+.postcss-curso {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: postcss-curso;
+}
+
+.postcss-date {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: postcss-fecha;
+}
+
+.logo-gridlayout {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: gridlayout;
+}
+
+.gridlayout-curso {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: gridlayout-curso;
+}
+
+.gridlayout-date {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: gridlayout-fecha;
+}
+
+.logo-responsive {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: responsive;
+}
+
+.responsive-curso {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: responsive-curso;
+}
+
+.responsive-date {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: responsive-fecha;
+}
+
+.logo-git {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: git;
+}
+
+.git-curso {
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  grid-area: git-curso;
+}
+
+.git-date {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  grid-area: git-fecha;
+}
+
+.logo-desarrollo {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: desarrollo;
+}
+
+.desarrollo-curso {
+  -ms-grid-row: 7;
+  -ms-grid-column: 4;
+  grid-area: desarrollo-curso;
+}
+
+.desarrollo-date {
+  -ms-grid-row: 8;
+  -ms-grid-column: 4;
+  grid-area: desarrollo-fecha;
+}
+
+.logo-fund-ing {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: fund-ing;
+}
+
+.fund-ing-curso {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  grid-area: fund-ing-curso;
+}
+
+.fund-ing-date {
+  -ms-grid-row: 10;
+  -ms-grid-column: 2;
+  grid-area: fund-ing-fecha;
+}
+
+.logo-programacion {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: programacion;
+}
+
+.programacion-curso {
+  -ms-grid-row: 9;
+  -ms-grid-column: 4;
+  grid-area: programacion-curso;
+}
+
+.programacion-date {
+  grid-row: 10;
+  grid-column: 4;
+  grid-area: programacion-fecha;
+}
+
+.redes-sociales {
+  display: inline-flex;
+  flex-direction: row;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.redes-sociales a:first-child {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-image: url("../../dev/social-media/facebook.svg");
+  background-size: 40px 40px;
+}
+
+.redes-sociales a:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-image: url("../../dev/social-media/instagram.svg");
+  background-size: 40px 40px;
+}
+
+.redes-sociales a:nth-child(3) {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-image: url("../../dev/social-media/github.svg");
+  background-size: 40px 40px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+}
 
 .branding-item:nth-child(2) a {
-cursor: pointer;
-position: relative;
-display: block;
+  cursor: pointer;
+  position: relative;
+  display: block;
 }
 
-.branding-item figure{
-    margin: 0;
+.branding-item figure {
+  margin: 0;
 }
 
 .post-overlay {
-    background: rgba(0, 0, 0, .2);
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    display: none;
-    color: #990202;
-    width: inherit;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  color: #990202;
+  width: inherit;
 }
 
-.skills-section{
-    background-color: #151834;
-    color: #e3eaff;
-    text-align: center;
-    display: flex;
+@media screen and (max-width: 767px) {
+  header {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em 0px;
-}
-#skills-image{
-    margin: .5em;
-}
-.inline-skills{
-    display: inline-flex;
-}
+    height: auto;
+    padding-bottom: 1em;
+  }
 
-.list-skills{
-    display: grid;
-    width: 80vw;
-    grid-template-columns: 100px 1fr 100px 1fr;
-    grid-template-rows: repeat(10,70px);
-    grid-template-areas: "wordpress wordpress-curso diseño diseño-curso"
-                         "wordpress wordpress-fecha diseño diseño-fecha"
-                         "javascript javascript-curso postcss postcss-curso"
-                        "javascript javascript-fecha postcss postcss-fecha"
-                        "gridlayout gridlayout-curso responsive responsive-curso"
-                        "gridlayout gridlayout-fecha responsive responsive-fecha"
-                        "git git-curso desarrollo desarrollo-curso"
-                        "git git-fecha desarrollo desarrollo-fecha"
-                        "fund-ing fund-ing-curso programacion programacion-curso"
-                        "fund-ing fund-ing-fecha programacion programacion-fecha"    ;
-}
+  .navegador nav ul {
+    flex-direction: column;
+  }
 
-.list-skills h1{
-    color: #e3eaff;
+  .navegador ul li {
+    padding: 0.5em;
+  }
+
+  .principal-title, .principal-title-2 {
+    font-size: 2em;
+  }
+
+  .second-title {
     font-size: 1.5em;
-    text-align: left;
-    margin: 0px;
-    padding: .5em;
+  }
+
+  #proyectos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #project {
+    width: 80vw;
+  }
+
+  .project-div-2 {
+    width: 60vw;
+  }
+
+  .inline-skills {
+    padding: 1.5em;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .list-skills {
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: repeat(10, 70px);
+    grid-template-areas: "wordpress wordpress-curso" "wordpress wordpress-fecha" "diseño diseño-curso" "diseño diseño-fecha" "javascript javascript-curso" "javascript javascript-fecha" "postcss postcss-curso" "postcss postcss-fecha" "gridlayout gridlayout-curso" "gridlayout gridlayout-fecha" "responsive responsive-curso" "responsive responsive-fecha" "git git-curso" "git git-fecha" "desarrollo desarrollo-curso" "desarrollo desarrollo-fecha" "fund-ing fund-ing-curso" "fund-ing fund-ing-fecha" "programacion programacion-curso" "programacion programacion-fecha";
+  }
+
+  .logo-wordpress {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .wordpress-curso {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .wordpress-date {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
+  .logo-diseño {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .diseño-curso {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+
+  .diseño-date {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+
+  .logo-javascript {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .javascript-curso {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+  }
+
+  .javascript-date {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+  }
+
+  .logo-postcss {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .postcss-curso {
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+  }
+
+  .postcss-date {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+  }
+
+  .logo-gridlayout {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .gridlayout-curso {
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
+  }
+
+  .gridlayout-date {
+    -ms-grid-row: 10;
+    -ms-grid-column: 2;
+  }
+
+  .logo-responsive {
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .responsive-curso {
+    -ms-grid-row: 11;
+    -ms-grid-column: 2;
+  }
+
+  .responsive-date {
+    -ms-grid-row: 12;
+    -ms-grid-column: 2;
+  }
+
+  .logo-git {
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .git-curso {
+    -ms-grid-row: 13;
+    -ms-grid-column: 2;
+  }
+
+  .git-date {
+    -ms-grid-row: 14;
+    -ms-grid-column: 2;
+  }
+
+  .logo-desarrollo {
+    -ms-grid-row: 15;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .desarrollo-curso {
+    -ms-grid-row: 15;
+    -ms-grid-column: 2;
+  }
+
+  .desarrollo-date {
+    -ms-grid-row: 16;
+    -ms-grid-column: 2;
+  }
+
+  .logo-fund-ing {
+    -ms-grid-row: 17;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .fund-ing-curso {
+    -ms-grid-row: 17;
+    -ms-grid-column: 2;
+  }
+
+  .fund-ing-date {
+    -ms-grid-row: 18;
+    -ms-grid-column: 2;
+  }
+
+  .logo-programacion {
+    -ms-grid-row: 19;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+
+  .programacion-curso {
+    -ms-grid-row: 19;
+    -ms-grid-column: 2;
+  }
+
+  .programacion-date {
+    -ms-grid-row: 20;
+    -ms-grid-column: 2;
+  }
 }
-
-.list-skills h2{
-    color: #990202;
-    font-size: 1em;
-    text-align: left;
-    text-indent: 1.5em;
-    margin: 0px;
-    padding-bottom: .5em;
-}
-
-#logo{
-    padding: 1em;
-    justify-self: center;
-    align-self: center;
-}
-
-#curso{
-    align-self: center;
-}
-
-#fecha{
-    align-self: center;
-}
-
-.logo-wordpress{
-    grid-area: wordpress;
-}
-
-.wordpress-curso{
-    grid-area: wordpress-curso;
-}
-
-.wordpress-date{
-    grid-area: wordpress-fecha;
-}
-
-.logo-diseño{
-    grid-area: diseño;
-}
-
-.diseño-curso{
-    grid-area: diseño-curso;
-}
-
-.diseño-date{
-    grid-area: diseño-fecha;
-}
-
-.logo-javascript{
-    grid-area: javascript;
-}
-.javascript-curso{
-    grid-area: javascript-curso;
-}
-
-.javascript-date{
-    grid-area: javascript-fecha;
-}
-
-.logo-postcss{
-    grid-area: postcss
-}
-
-.postcss-curso{
-    grid-area: postcss-curso;
-}
-
-.postcss-date{
-    grid-area: postcss-fecha;
-}
-
-.logo-gridlayout{
-    grid-area: gridlayout;
-}
-
-.gridlayout-curso{
-    grid-area: gridlayout-curso;
-}
-
-.gridlayout-date{
-    grid-area: gridlayout-fecha;
-}
-
-.logo-responsive{
-    grid-area: responsive;
-}
-
-.responsive-curso{
-    grid-area: responsive-curso;
-}
-
-.responsive-date{
-    grid-area: responsive-fecha;
-}
-
-.logo-git{
-    grid-area: git;
-}
-
-.git-curso{
-    grid-area: git-curso;
-}
-
-.git-date{
-    grid-area: git-fecha;
-}
-
-.logo-desarrollo{
-    grid-area: desarrollo;
-}
-
-.desarrollo-curso{
-    grid-area: desarrollo-curso;
-}
-
-.desarrollo-date{
-    grid-area: desarrollo-fecha;
-}
-
-.logo-fund-ing{
-    grid-area: fund-ing;
-}
-
-.fund-ing-curso{
-    grid-area: fund-ing-curso;
-}
-
-.fund-ing-date{
-    grid-area: fund-ing-fecha;
-}
-
-.logo-programacion{
-    grid-area: programacion;
-}
-
-.programacion-curso{
-    grid-area: programacion-curso;
-}
-
-.programacion-date{
-    grid-area: programacion-fecha;
-}
-
-
-   
-@media screen and (max-width:1024px) {
-
-}
-
-@media screen and (max-width:767px) {
-    header{
-        flex-direction: column;
-        height: auto;
-        padding-bottom: 1em;
-    }
-
-    .navegador nav ul{
-        flex-direction: column;
-    }
-    .navegador ul li{
-        padding: .5em;
-    }
-    .principal-title, .principal-title-2{
-        font-size: 2em;
-    }
-    .second-title{
-        font-size: 1.5em;
-    }
-    #proyectos{
-        flex-direction: column;
-        align-items: center;
-    }
-    #project{
-        width: 80vw;
-    }
-    .project-div-2{
-        width: 60vw;
-    }
-    .inline-skills{
-        padding: 1.5em;
-    }
-    footer{
-        flex-direction: column;
-    }
-    .list-skills{
-        grid-template-columns: 120px 1fr;
-        grid-template-rows: repeat(10,70px);
-        grid-template-areas: "wordpress wordpress-curso"
-                             "wordpress wordpress-fecha"
-                             "diseño diseño-curso"
-                             "diseño diseño-fecha"
-                             "javascript javascript-curso"
-                             "javascript javascript-fecha"
-                             "postcss postcss-curso"
-                             "postcss postcss-fecha"
-                             "gridlayout gridlayout-curso"
-                             "gridlayout gridlayout-fecha"
-                             "responsive responsive-curso"
-                             "responsive responsive-fecha"
-                             "git git-curso"
-                             "git git-fecha"
-                             "desarrollo desarrollo-curso"
-                             "desarrollo desarrollo-fecha"
-                             "fund-ing fund-ing-curso"
-                             "fund-ing fund-ing-fecha"
-                             "programacion programacion-curso"
-                             "programacion programacion-fecha";
-    }
-}
-
-@media screen and (max-width:480px) {
-    
- 
-}
-
-@media screen and (max-width:320px) {
-   
-}
-

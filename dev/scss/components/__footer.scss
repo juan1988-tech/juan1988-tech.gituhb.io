@@ -1,0 +1,47 @@
+footer
+{
+padding: 2em 0;    
+background-color: #02051f; 
+color: #e3eaff;
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+flex-direction: row;
+height: 340px;
+width: 100%;
+align-items: center;
+line-height: 1em;
+letter-spacing: 0.1px; 
+height: auto;   
+}
+
+footer div
+{
+height: auto;  
+display: flex;
+flex-direction: row;
+justify-content: space-evenly; 
+align-items: center;
+text-align: center;
+}
+
+footer div:first-child 
+{
+display: block;
+}
+
+footer div button
+{
+margin:0px;        
+}
+
+footer div input
+{
+width: 210px;
+}
+
+footer div:nth-child(2)
+{
+display: block;
+text-align: center; 
+}

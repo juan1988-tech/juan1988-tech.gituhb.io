@@ -1,0 +1,71 @@
+@import './variables.scss';
+
+.title_white{
+margin: 10px 0px 10px 0px;
+color: $white-title;
+text-align: center;
+font-size: $title_h1; 
+}
+
+.title_white__h2{
+    @extend .title_white;
+    font-size: $title_h2;
+    }
+.title_white_h3{
+    @extend .title_white;
+    font-size: $title_h3;
+    }
+.title_white_h4{
+    @extend .title_white;
+    font-size: $title_h4;
+    }        
+
+.title_red{
+margin: 10px 0px 10px 0px;
+color: $red-title;
+text-align: center;
+font-size: $title_h1;     
+}
+
+.title_red_h2{
+    @extend .title_red;
+    font-size: $title_h2;
+}
+.title_red_h3{
+    @extend .title_red;
+    font-size: $title_h3;
+        }
+.title_red_h4{
+    @extend .title_red;
+    font-size: $title_h4;
+        }    
+
+
+.social-media-title h2{
+    font-size: 1.5em;
+    margin: .5em;
+}
+
+.header-second-title{
+    color: $red-title;
+    font-size: 1em; 
+    text-align: center;     
+}
+
+
+.list-skills h1{
+    color: #e3eaff;
+    font-size: 1.5em;
+    text-align: left;
+    margin: 0px;
+    padding: .5em;
+}
+
+.list-skills h2{
+    color: #990202;
+    font-size: 1em;
+    text-align: left;
+    text-indent: 1.5em;
+    margin: 0px;
+    padding-bottom: .5em;
+}

@@ -1,0 +1,59 @@
+@import '../lib/variables.scss';
+
+#proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#project{
+    width: 40vw;
+    height: 650px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    box-shadow: 2px 2px 2px 2px $darkGrey-shadows;
+}
+.project-title-1{
+    font-size: 2em;
+    text-align: center;
+    margin: 0px;
+    color: $red-title
+}
+.project-title-2{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0px;
+    color: $purple;
+}
+.project-div-1{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    background-image: url('../../dev/images/container-fondo-1.png');
+    padding-top: 1em;
+}
+.project-div-2{
+    width: 30vw;
+    display:flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: -5em;
+    background-color: #e6e9eb;
+    box-shadow: 2px 2px 2px 2px $purple-shadow;
+}
+.project-div-3{
+    margin-top: 7.5em;
+}
+.project-a{ 
+    color: $purple;
+    border: 1px solid $purple;
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
