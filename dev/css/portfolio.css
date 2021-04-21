@@ -97,12 +97,26 @@ header {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  height: 150px;
-  box-shadow: 80px 80px 80px 80px white;
+  height: 100px;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .cabecera-1 {
   margin: 0em 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-link {
+  display: inline-flex;
+  flex-direction: row;
 }
 
 .navegador {
@@ -180,10 +194,6 @@ header {
   margin: 1em;
 }
 
-.hero-p h2 {
-  margin: 0.3em 0;
-}
-
 .social-media-title {
   margin-bottom: 0.5em;
 }
@@ -201,7 +211,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 

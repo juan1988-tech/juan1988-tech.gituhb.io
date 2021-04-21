@@ -7,15 +7,29 @@ color: $white-title;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-text-align: center;
+ text-align: center;
 align-items: center;
-height: 150px;
-box-shadow: 80px 80px 80px 80px $grey-shadows;
+height: 100px;
+width: 100vw;
+//box-shadow: 80px 80px 80px 80px $grey-shadows;
+position: sticky;
+top: 0;
 }
 
+header a{
+    text-decoration: none;
+}
 .cabecera-1
 {
-margin: 0em 5em;    
+margin: 0em 5em;
+display: flex;
+flex-direction: column;
+align-items: center;    
+}
+
+.back-link{
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .navegador
