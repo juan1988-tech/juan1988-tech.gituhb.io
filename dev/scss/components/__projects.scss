@@ -1,11 +1,24 @@
 @import '../lib/variables.scss';
 
-#proyectos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.projects{
+display: flex;
+flex-direction: column;
 }
-#project{
+
+.projects__section{
+    display: flex;
+    flex-direction: column;
+}
+
+.project__layout{
+    display: grid;
+    grid-template: 650px 650px/1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas: "project-1 project-2"
+                         "project-3 project-4";
+}
+
+.project{
     width: 40vw;
     height: 650px;
     margin: 1em;
@@ -13,7 +26,31 @@
     flex-direction: column;
     align-items: center; 
     box-shadow: 2px 2px 2px 2px $darkGrey-shadows;
+    align-self: center;
+    justify-self: center;
 }
+
+.project-1{
+    @extend .project;
+    grid-area: project-1;
+}
+
+.project-2{
+    @extend .project;
+    grid-area: project-2;
+}
+
+.project-3{
+    @extend .project;
+    grid-area: project-3;
+}
+
+.project-4{
+    @extend .project;
+    grid-area: project-4;
+}
+
+
 .project-title-1{
     font-size: 2em;
     text-align: center;
