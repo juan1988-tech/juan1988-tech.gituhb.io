@@ -15,9 +15,13 @@ flex-direction: column;
     grid-template: 650px 650px/1fr 1fr;
     grid-gap: 1em;
     grid-template-areas: "project-1 project-2"
-                         "project-3 project-4";
-}
+          "project-3 project-4";
+}               
 
+#title-projects{
+    width: 10px;
+    padding: 20px;
+}
 .project{
     width: 40vw;
     height: 650px;
@@ -29,6 +33,7 @@ flex-direction: column;
     align-self: center;
     justify-self: center;
 }
+
 
 .project-1{
     @extend .project;
