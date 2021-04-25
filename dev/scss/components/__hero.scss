@@ -1,11 +1,14 @@
-#hero
+@import '../lib/titles.scss';
+@import '../lib/variables.scss';
+
+.hero
 {
-background-color: #151834;
-color: #e3eaff;
+background-color: #191b36;
+color: $white-title;
 justify-content: space-between; 
 height: auto;
 margin: 0px;
-padding: 2em 2em 2em 2em;
+//padding: 1em 1em 1em 1em;
 display: flex;
 justify-content: center;    
 text-align: center;
@@ -13,23 +16,109 @@ flex-direction: column;
 align-items: center;
 }
 
-#hero-photo{
-padding: 1em;
-margin: 0px;
-text-align: center;  
+.hero__portrait{
+   // border-bottom: 1px solid $white-title;
+    width: 100vw;
+    background-color: $background-blue;
+    padding: 1em;
+}
+
+.hero__portrait-information{
+    width: 100%;
+    height: 319px;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hero__portrait-title{
+    justify-content: center;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
 }
 
 .hero-p{
 display: block;    
-width: 44em;
+width: 40vw;
 text-align: center;
+padding: 1em;
 }
 
 .hero-p p{
 text-align: justify;
 margin: 1em;
+align-items: center;
+justify-content: center;
 }
 
+.hero-p__buttons{
+    width: 40vw;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
 .social-media-title{
     margin-bottom: .5em;
+}
+
+.hero-p__buttons a{
+    text-decoration: none;
+    color: $white-title;
+    border: .5px solid $white-title;
+    border-radius: .5em;
+    width: 125px;
+    height: 2em;
+    padding: .5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $purple-button;
+    &:hover {
+        background-color: $background-white;
+        color: $purple-button;
+        transition-duration: 0.5s;
+        border: 1px solid $purple-button;
+    }
+}
+
+.redes-sociales
+{
+display: inline-flex;
+flex-direction: row;
+width: 180px;
+justify-content: space-between;
+width: auto;
+padding-bottom: 1em;
+}
+
+
+.redes-sociales a:first-child
+{
+width: 40px;
+height: 40px;
+margin-left: 10px;
+background-image: url('../../dev/social-media/facebook.svg');
+background-size: 40px 40px;
+}
+
+.redes-sociales a:nth-child(2)
+{
+width: 40px;
+height: 40px;
+margin-left: 10px;
+background-image: url('../../dev/social-media/instagram.svg');
+background-size: 40px 40px;
+}
+
+.redes-sociales a:nth-child(3)
+{
+width: 40px;
+height: 40px;
+margin-left: 10px;
+background-image: url('../../dev/social-media/github.svg');
+background-size: 40px 40px;
 }

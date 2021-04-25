@@ -7,44 +7,6 @@
 @import './components/__skills';
 
 
-.redes-sociales
-{
-display: inline-flex;
-flex-direction: row;
-width: 180px;
-justify-content: space-between;
-width: auto;
-padding-bottom: 1em;
-}
-
-
-.redes-sociales a:first-child
-{
-width: 40px;
-height: 40px;
-margin-left: 10px;
-background-image: url('../../dev/social-media/facebook.svg');
-background-size: 40px 40px;
-}
-
-.redes-sociales a:nth-child(2)
-{
-width: 40px;
-height: 40px;
-margin-left: 10px;
-background-image: url('../../dev/social-media/instagram.svg');
-background-size: 40px 40px;
-}
-
-.redes-sociales a:nth-child(3)
-{
-width: 40px;
-height: 40px;
-margin-left: 10px;
-background-image: url('../../dev/social-media/github.svg');
-background-size: 40px 40px;
-}
-
 .information
 {
 display: flex;

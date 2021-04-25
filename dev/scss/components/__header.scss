@@ -1,6 +1,6 @@
 @import '../lib/variables.scss';
 
-header
+.header
 {
 background-color: $dark-blue; 
 color: $white-title;
@@ -15,9 +15,10 @@ position: sticky;
 top: 0;
 }
 
-header a{
+.header a{
     text-decoration: none;
 }
+
 .cabecera-1
 {
 margin: 0em 5em;
@@ -26,12 +27,29 @@ flex-direction: column;
 align-items: center;    
 }
 
-.back-link{
+.header__logo{
+    justify-content: center;
     display: inline-flex;
     flex-direction: row;
+    height: 100px;
 }
 
-.navegador
+.header__logo-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.header__logo-figure{
+    padding: 1em;
+    height: inherit;
+    margin: 0px;
+}
+
+
+.header__navigator
 {
 display: flex;
 width: auto;
@@ -39,13 +57,13 @@ margin: 0px 40px;
 height: inherit;
 }
 
-.navegador nav
+.header__navigator nav
 {
 justify-content: space-evenly; 
 height: inherit;
 }
 
-.navegador nav ul
+.header__navigator nav ul
 {
 display: flex;
 flex-direction: row;
@@ -56,14 +74,14 @@ padding: 0px;
 height: inherit;
 }
 
-.navegador ul li
+.header__navigator ul li
 {
 list-style: none;
 padding: 0px 10px 0px 10px; 
 height: 100%;   
 }
 
-.navegador ul li a
+.header__navigator ul li a
 {
 display: inline-flex;
 text-decoration: none;
@@ -74,7 +92,7 @@ justify-content: center;
 /* border: 1px solid red; */
 width: 111px;
 }
-.navegador ul li a:hover
+.header__navigator ul li a:hover
 {
 color: #990202;
 transition-duration: 0.5s;

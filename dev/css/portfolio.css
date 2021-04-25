@@ -27,14 +27,14 @@ html {
   scroll-behavior: smooth;
 }
 
-.title_white, .title_white_h4, .title_white_h3, .title_white__h2 {
-  margin: 10px 0px 10px 0px;
+.title_white, .title_white_h4, .title_white_h3, .title_white_h2 {
+  margin: 0;
   color: #e3eaff;
   text-align: center;
   font-size: 2.5em;
 }
 
-.title_white__h2 {
+.title_white_h2 {
   font-size: 2em;
 }
 
@@ -47,7 +47,7 @@ html {
 }
 
 .title_red, .title_red_h4, .title_red_h3, .title_red_h2 {
-  margin: 10px 0px 20px 0px;
+  margin: 0;
   color: #990202;
   text-align: center;
   font-size: 2.5em;
@@ -93,7 +93,7 @@ html {
   padding-bottom: 0.5em;
 }
 
-header {
+.header {
   background-color: #02051f;
   color: #e3eaff;
   display: flex;
@@ -107,7 +107,7 @@ header {
   top: 0;
 }
 
-header a {
+.header a {
   text-decoration: none;
 }
 
@@ -118,24 +118,40 @@ header a {
   align-items: center;
 }
 
-.back-link {
+.header__logo {
+  justify-content: center;
   display: inline-flex;
   flex-direction: row;
+  height: 100px;
 }
 
-.navegador {
+.header__logo-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.header__logo-figure {
+  padding: 1em;
+  height: inherit;
+  margin: 0px;
+}
+
+.header__navigator {
   display: flex;
   width: auto;
   margin: 0px 40px;
   height: inherit;
 }
 
-.navegador nav {
+.header__navigator nav {
   justify-content: space-evenly;
   height: inherit;
 }
 
-.navegador nav ul {
+.header__navigator nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -145,13 +161,13 @@ header a {
   height: inherit;
 }
 
-.navegador ul li {
+.header__navigator ul li {
   list-style: none;
   padding: 0px 10px 0px 10px;
   height: 100%;
 }
 
-.navegador ul li a {
+.header__navigator ul li a {
   display: inline-flex;
   text-decoration: none;
   color: #e3eaff;
@@ -162,18 +178,83 @@ header a {
   width: 111px;
 }
 
-.navegador ul li a:hover {
+.header__navigator ul li a:hover {
   color: #990202;
   transition-duration: 0.5s;
 }
 
-#hero {
-  background-color: #151834;
+.title_white, .title_white_h2, .title_white_h3, .title_white_h4 {
+  margin: 0;
+  color: #e3eaff;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.title_white_h2 {
+  font-size: 2em;
+}
+
+.title_white_h3 {
+  font-size: 1.5em;
+}
+
+.title_white_h4 {
+  font-size: 1em;
+}
+
+.title_red, .title_red_h2, .title_red_h3, .title_red_h4 {
+  margin: 0;
+  color: #990202;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.title_red_h2 {
+  font-size: 2em;
+}
+
+.title_red_h3 {
+  font-size: 1.5em;
+}
+
+.title_red_h4 {
+  font-size: 1em;
+}
+
+.social-media-title h2 {
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+.header-second-title {
+  color: #990202;
+  font-size: 1em;
+  text-align: center;
+}
+
+.list-skills h1 {
+  color: #e3eaff;
+  font-size: 1.5em;
+  text-align: left;
+  margin: 0px;
+  padding: 0.5em;
+}
+
+.list-skills h2 {
+  color: #990202;
+  font-size: 1em;
+  text-align: left;
+  text-indent: 1.5em;
+  margin: 0px;
+  padding-bottom: 0.5em;
+}
+
+.hero {
+  background-color: #191b36;
   color: #e3eaff;
   justify-content: space-between;
   height: auto;
   margin: 0px;
-  padding: 2em 2em 2em 2em;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -181,25 +262,106 @@ header a {
   align-items: center;
 }
 
-#hero-photo {
+.hero__portrait {
+  width: 100vw;
+  background-color: #151834;
   padding: 1em;
-  margin: 0px;
-  text-align: center;
+}
+
+.hero__portrait-information {
+  width: 100%;
+  height: 319px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hero__portrait-title {
+  justify-content: center;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
 }
 
 .hero-p {
   display: block;
-  width: 44em;
+  width: 40vw;
   text-align: center;
+  padding: 1em;
 }
 
 .hero-p p {
   text-align: justify;
   margin: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-p__buttons {
+  width: 40vw;
+  display: inline-flex;
+  justify-content: space-evenly;
+  padding: 1em;
 }
 
 .social-media-title {
   margin-bottom: 0.5em;
+}
+
+.hero-p__buttons a {
+  text-decoration: none;
+  color: #e3eaff;
+  border: 0.5px solid #e3eaff;
+  border-radius: 0.5em;
+  width: 125px;
+  height: 2em;
+  padding: 0.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c102a;
+}
+.hero-p__buttons a:hover {
+  background-color: #e6e9eb;
+  color: #5c102a;
+  transition-duration: 0.5s;
+  border: 1px solid #5c102a;
+}
+
+.redes-sociales {
+  display: inline-flex;
+  flex-direction: row;
+  width: 180px;
+  justify-content: space-between;
+  width: auto;
+  padding-bottom: 1em;
+}
+
+.redes-sociales a:first-child {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-image: url("../../dev/social-media/facebook.svg");
+  background-size: 40px 40px;
+}
+
+.redes-sociales a:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-image: url("../../dev/social-media/instagram.svg");
+  background-size: 40px 40px;
+}
+
+.redes-sociales a:nth-child(3) {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-image: url("../../dev/social-media/github.svg");
+  background-size: 40px 40px;
 }
 
 .projects {
@@ -583,39 +745,6 @@ footer div:nth-child(2) {
   grid-row: 10;
   grid-column: 4;
   grid-area: programacion-fecha;
-}
-
-.redes-sociales {
-  display: inline-flex;
-  flex-direction: row;
-  width: 180px;
-  justify-content: space-between;
-  width: auto;
-  padding-bottom: 1em;
-}
-
-.redes-sociales a:first-child {
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-  background-image: url("../../dev/social-media/facebook.svg");
-  background-size: 40px 40px;
-}
-
-.redes-sociales a:nth-child(2) {
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-  background-image: url("../../dev/social-media/instagram.svg");
-  background-size: 40px 40px;
-}
-
-.redes-sociales a:nth-child(3) {
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-  background-image: url("../../dev/social-media/github.svg");
-  background-size: 40px 40px;
 }
 
 .information {

@@ -1,13 +1,13 @@
 @import './variables.scss';
 
 .title_white{
-margin: 10px 0px 10px 0px;
+margin: 0;
 color: $white-title;
 text-align: center;
 font-size: $title_h1; 
 }
 
-.title_white__h2{
+.title_white_h2{
     @extend .title_white;
     font-size: $title_h2;
     }
@@ -21,7 +21,7 @@ font-size: $title_h1;
     }        
 
 .title_red{
-margin: 10px 0px 20px 0px;
+margin: 0;
 color: $red-title;
 text-align: center;
 font-size: $title_h1;     

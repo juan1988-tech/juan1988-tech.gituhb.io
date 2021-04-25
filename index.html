@@ -9,23 +9,23 @@
     <title>Juan David Franco</title>
 </head>
 <body>
-    <header class="cabecera">
-        <a class="cabecera_a" href="C:/Users/TRABAJO/Desktop/juan1988-tech.gituhb.io/index.html"> 
-         <div class="back-link">
-            <figure>
+    <header class="header">
+        <a class="logo" href="C:/Users/mando/OneDrive/Escritorio/portafolio-cv/index.html"> 
+         <div class="header__logo">
+            <figure class="header__logo-figure">
                 <img src="./dev/images/brand-logo.svg" height="75" width="75" />
             </figure>   
-            <div class="back-link-titles"> 
+            <div class="header__logo-titles"> 
                <h3 class="title_white_h3">JUAN DAVID FRANCO</h3>
                <h4 class="title_red_h4">Frontend Designer</h4>    
             </div>  
            </div>
          </a>  
-        <div class="navegador">
+        <div class="header__navigator">
         <nav>
             <ul>
                 <li>
-                    <a href="#title-projects">PROYECTOS</a>
+                    <a href="#proyectos__experiencia">PROYECTOS</a>
                 </li>
                 <li>
                     <a href="#conocimientos">CONOCIMIENTOS</a>
@@ -40,38 +40,45 @@
         </nav> 
         </div>
     </header> 
-<section id="hero">
-    <figure id="hero-photo">
-        <img src="dev/images/portrait.png" alt="foto-Juan-David" width="200px" height="200px">
-    </figure> 
-    <div class="cabecera-1">
-        <h1 class="title_white">JUAN DAVID FRANCO</h1>
-        <h1 class="title_red">Frontend Designer</h1>
+<section class="hero">
+    <div class="hero__portrait">
+        <div>
+            <h2 class="title_white_h2">JUAN DAVID FRANCO</h2>
+            <h3 class="title_red_h3">Frontend Designer and Developer</h3>
+        </div>
+        <figure id="hero-photo">
+            <img src="./dev/images/brand-logo.svg" alt="foto-Juan-David" width="200px" height="200px">
+        </figure>
+        
     </div>
-   
-    <h2 class="title_white_h2">ACERCA DE MÍ</h2>
-    <div class ='hero-p'>
-        <p>Soy Juan David Franco, Frontend Designer. Tengo conocimientos en:
-            html, css, versionamiento con git y git hub, responsive design, animaciones para css, postcss, implementacion de sistemas de diseño para desarrolladores, fundamentos en javascript, y css grid layout.
-            Me caracterizo por ser una persona que busca nunca parar de aprender, busco actualizarme constantemente y me apasiona el diseño de paginas esteticamente agradables y que brinden una buena experiencia al usuario. Actualmente soy arquitecto frontend, pero tengo intereses en el diseño, y el desarrollo UX y UI 
-                    </p>
-        <h2>3102878262</h2>
-        <h2>jfrancoh5@gmail.com</h2>            
+    <div class="hero__portrait-information">
+        <div class="hero__portrait-title">
+            <h1 class="title_white_h2">ACERCA DE MÍ</h1>    
+        </div>
+        <div class ='hero-p'>
+                <p>Soy Juan David Franco, Dieseñador y arquitecto frontend. Tengo conocimientos en creación y diseño de páginas  web</p>
+                 <p>  Me caracterizo por ser una persona que busca nunca parar de aprender, busco actualizarme constantemente. Actualmente soy arquitecto frontend, pero tengo intereses en el diseño, y el desarrollo UX y UI</p>   
+                 <div class="hero-p__buttons">
+                     <a href="#proyectos__experiencia">
+                         <span>
+                            ver proyectos
+                         </span>
+                    </a>
+                     <a href="https://www.behance.net/gallery/103508435/Juan-David-Franco-CV">ir a curriculum vitae</a>
+                 </div>
+        </div>
+            <!-- <div class="redes-sociales">
+                    <a href="https://www.facebook.com/jdfranco1988" target="_blank" ><img src='dev/social-media/facebook.svg' height="40" width="40" class='facebook'></a>
+                    <a href="https://www.instagram.com/jfrancoh1988/" target="_blank"></a>
+                    <a href="https://github.com/juan1988-tech" target="_blank"></a>     
+                </div>
+                <h4>3102878262</h4>
+                <h4>jfrancoh5@gmail.com</h4>  -->
+        </div>    
     </div>
-    <div class='social-media-title'>
-        <h2 class="second-title">Sigueme en mis redes sociales</h2>
-    </div>
-    <div class="redes-sociales"  >
-        <a href="https://www.facebook.com/jdfranco1988" target="_blank" ><img src='dev/social-media/facebook.svg' height="40" width="40" class='facebook'></a>
-        <a href="https://www.instagram.com/jfrancoh1988/" target="_blank"></a>
-        <a href="https://github.com/juan1988-tech" target="_blank"></a>
-        <a id="title-projects"></a>
-    </div>          
-</section>
-<section class="projects">
-    <div class="projects__title-h1">
-        <h1 class="title_red"> EXPERIENCIA Y PROYECTOS DESTACADOS</h1>
-    </div>
+</section>  
+<h1 class="title_red" id="title-projects"> EXPERIENCIA Y PROYECTOS DESTACADOS</h1>
+<section class="projects" id="proyectos__experiencia">
     <div class="project__layout"> 
             <div class="project-1">
                 <div class="project-div-1">
@@ -82,7 +89,7 @@
                     <h2 class="project-title-2">Descripcion</h2>
                     <p>Proyecto de pagina web para escuela de futbol. Se usa css grid layout, animaciones en css, responsive design
                     edición de imagenes con photoshop, y git y github para versionar el proyecto
-                    </p>
+                    </p>x
                     <a class="project-a">ver proyecto</a>
                 </div>
                 <div class="project-div-3">
@@ -134,12 +141,12 @@
                     <a class="project-a">ver proyecto</a>
                 </div>
                 <div class="project-div-3">
-                    <a class="project-a" id="conocimientos">decargar repositorio</a>
+                    <a class="project-a">decargar repositorio</a>
                 </div>
             </div>
-    </div>                
+    </div>             
 </section>   
-<h1 class="title_red">CONOCIMIENTOS ADQUIRIDOS</h1>
+<h1 class="title_red" id="conocimientos">CONOCIMIENTOS ADQUIRIDOS</h1>
 <section class="skills-section">
     <div class="inline-skills">
         <img src="dev/social-media/html.png" width="80" height="80" id="skills-image">
@@ -207,6 +214,6 @@
             <h3>Diseñado por</h3>
             <h3>@jdfranco1988</h3>
         </div>    
-    </footer>
+    </footer> 
 </body>
 </html>
