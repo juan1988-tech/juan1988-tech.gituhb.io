@@ -1,0 +1,72 @@
+@import '../lib/variables.scss';
+@import '../lib/buttons.scss';
+
+.modal{
+    display: none;
+    &:target{
+        position: fixed;
+        background: rgba(2,5,31,.8);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: $white-title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: .5s;
+    }
+}
+
+.modal__message{
+    background: rgba(0,0,0,.4);
+    border: 1px solid $white-title;
+    color: $white-title;
+    height: 720px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__background, .modal__description{
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal__background, .modal__description p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+.modal__background{
+    background-image: url('../../dev/images/bicorgraph.jpg');
+    background-size: 100%;
+    filter: brightness(80%);
+    background-position: initial;
+}
+
+.modal__description{
+    padding: 1em;
+    width: 660px;
+}
+
+.modal__buttons{
+    @include hero-p__buttons;
+}
+.modal__back{
+    @include hero-p__buttons;
+}
+
+.modal__skills{
+    display: flex;
+}
+
+.buttons__skills{
+    @include project__button-skill;
+}

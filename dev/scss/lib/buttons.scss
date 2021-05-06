@@ -1,0 +1,31 @@
+@mixin project__button-skill{
+    background-color: $purple-button;
+    color: $white-title;
+    border: 1px solid $white-title;
+    padding: .5em;
+    margin: .5em;
+    border-radius: 19px;
+    font-size: $soft_letter;
+    width: 100px;
+    filter: brightness(100%);
+}
+
+@mixin hero-p__buttons{
+    text-decoration: none;
+    color: $white-title;
+    border: .5px solid $white-title;
+    border-radius: .5em;
+    width: 125px;
+    height: 2em;
+    padding: .5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $purple-button;
+    &:hover {
+        background-color: $background-white;
+        color: $purple-button;
+        transition-duration: 0.5s;
+        border: 1px solid $purple-button;
+    }
+}

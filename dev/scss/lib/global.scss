@@ -20,7 +20,9 @@ ul
 {
 list-style: none;
 }
-
+span{
+    font-family: 'Roboto', sans-serif;
+}
 body
 {
 background-color:$background-white;   
@@ -31,3 +33,4 @@ margin: 0;
 html{
     scroll-behavior: smooth;
 }
+

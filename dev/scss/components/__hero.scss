@@ -1,5 +1,6 @@
 @import '../lib/titles.scss';
 @import '../lib/variables.scss';
+@import '../lib/buttons.scss';
 
 .hero
 {
@@ -25,7 +26,7 @@ align-items: center;
 
 .hero__portrait-information{
     width: 100%;
-    height: 319px;
+    height: 270px;
     padding: 1em;
     display: flex;
     flex-direction: row;
@@ -66,23 +67,7 @@ justify-content: center;
 }
 
 .hero-p__buttons a{
-    text-decoration: none;
-    color: $white-title;
-    border: .5px solid $white-title;
-    border-radius: .5em;
-    width: 125px;
-    height: 2em;
-    padding: .5em;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $purple-button;
-    &:hover {
-        background-color: $background-white;
-        color: $purple-button;
-        transition-duration: 0.5s;
-        border: 1px solid $purple-button;
-    }
+    @include hero-p__buttons
 }
 
 .redes-sociales

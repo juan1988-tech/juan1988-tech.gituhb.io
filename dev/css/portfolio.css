@@ -17,6 +17,10 @@ ul {
   list-style: none;
 }
 
+span {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   background-color: #e6e9eb;
   width: auto;
@@ -50,6 +54,7 @@ html {
   margin: 0;
   color: #990202;
   text-align: center;
+  padding: 0.5em 0;
   font-size: 2.5em;
 }
 
@@ -206,6 +211,7 @@ html {
   margin: 0;
   color: #990202;
   text-align: center;
+  padding: 0.5em 0;
   font-size: 2.5em;
 }
 
@@ -270,7 +276,7 @@ html {
 
 .hero__portrait-information {
   width: 100%;
-  height: 319px;
+  height: 270px;
   padding: 1em;
   display: flex;
   flex-direction: row;
@@ -364,109 +370,174 @@ html {
   background-size: 40px 40px;
 }
 
-.projects {
+.modal {
+  display: none;
+}
+.modal:target {
+  position: fixed;
+  background: rgba(2, 5, 31, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #e3eaff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.modal__message {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #e3eaff;
+  color: #e3eaff;
+  height: 720px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.projects__section {
-  display: flex;
-  flex-direction: column;
+.modal__background, .modal__description {
+  height: 50%;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.project__layout {
+.modal__background, .modal__description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+.modal__background {
+  background-image: url("../../dev/images/bicorgraph.jpg");
+  background-size: 100%;
+  filter: brightness(80%);
+  background-position: initial;
+}
+
+.modal__description {
+  padding: 1em;
+  width: 660px;
+}
+
+.modal__buttons {
+  text-decoration: none;
+  color: #e3eaff;
+  border: 0.5px solid #e3eaff;
+  border-radius: 0.5em;
+  width: 125px;
+  height: 2em;
+  padding: 0.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c102a;
+}
+.modal__buttons:hover {
+  background-color: #e6e9eb;
+  color: #5c102a;
+  transition-duration: 0.5s;
+  border: 1px solid #5c102a;
+}
+
+.modal__back {
+  text-decoration: none;
+  color: #e3eaff;
+  border: 0.5px solid #e3eaff;
+  border-radius: 0.5em;
+  width: 125px;
+  height: 2em;
+  padding: 0.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c102a;
+}
+.modal__back:hover {
+  background-color: #e6e9eb;
+  color: #5c102a;
+  transition-duration: 0.5s;
+  border: 1px solid #5c102a;
+}
+
+.modal__skills {
+  display: flex;
+}
+
+.buttons__skills {
+  background-color: #5c102a;
+  color: #e3eaff;
+  border: 1px solid #e3eaff;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 19px;
+  font-size: 0.75em;
+  width: 100px;
+  filter: brightness(100%);
+}
+
+.projects__layout {
   display: grid;
   grid-template: 650px 650px/1fr 1fr;
   grid-gap: 1em;
+  justify-items: center;
   grid-template-areas: "project-1 project-2" "project-3 project-4";
 }
 
-#title-projects {
-  width: 10px;
-  padding: 20px;
-}
-
-.project, .project-4, .project-3, .project-2, .project-1 {
-  width: 40vw;
-  height: 650px;
+.project {
+  width: 500px;
+  height: 540px;
+  max-width: 100%;
   margin: 1em;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
-  align-self: center;
-  justify-self: center;
-}
-
-.project-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: project-1;
-}
-
-.project-2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: project-2;
-}
-
-.project-3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: project-3;
-}
-
-.project-4 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: project-4;
-}
-
-.project-title-1 {
-  font-size: 2em;
-  text-align: center;
-  margin: 0px;
-  color: #990202;
-}
-
-.project-title-2 {
-  font-size: 1.5em;
-  text-align: center;
-  margin: 0px;
-  color: #51015c;
-}
-
-.project-div-1 {
-  height: 50%;
-  width: 100%;
-  text-align: center;
-  background-image: url("../../dev/images/container-fondo-1.png");
-  padding-top: 1em;
-}
-
-.project-div-2 {
-  width: 30vw;
-  display: flex;
-  flex-direction: column;
-  height: 250px;
   justify-content: center;
   align-items: center;
-  padding: 1em;
-  margin: -5em;
-  background-color: #e6e9eb;
-  box-shadow: 2px 2px 2px 2px rgba(81, 1, 92, 0.2);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-image: url("../../dev/images/bicorgraph.jpg");
+  background-size: 500px;
+  cursor: pointer;
+}
+.project:hover .project__view-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: #e3eaff;
+  animation: brillo 1.5s 1;
+}
+@keyframes brillo {
+  from {
+    filter: brightness(30%);
+  }
+  to {
+    filter: brightness(100%);
+  }
 }
 
-.project-div-3 {
-  margin-top: 7.5em;
+.project__view-layout {
+  margin: 0;
+  padding: 0;
+  height: 540px;
+  width: 500px;
 }
 
-.project-a {
-  color: #51015c;
-  border: 1px solid #51015c;
-  border-radius: 5px;
-  padding: 1em;
-  margin-bottom: 1em;
+.project__view figure img {
+  vertical-align: top;
+}
+
+.project__view-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: none;
 }
 
 footer {
@@ -745,6 +816,117 @@ footer div:nth-child(2) {
   grid-row: 10;
   grid-column: 4;
   grid-area: programacion-fecha;
+}
+
+.modal {
+  display: none;
+}
+.modal:target {
+  position: fixed;
+  background: rgba(2, 5, 31, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #e3eaff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.modal__message {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #e3eaff;
+  color: #e3eaff;
+  height: 720px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__background, .modal__description {
+  height: 50%;
+  width: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal__background, .modal__description p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+.modal__background {
+  background-image: url("../../dev/images/bicorgraph.jpg");
+  background-size: 100%;
+  filter: brightness(80%);
+  background-position: initial;
+}
+
+.modal__description {
+  padding: 1em;
+  width: 660px;
+}
+
+.modal__buttons {
+  text-decoration: none;
+  color: #e3eaff;
+  border: 0.5px solid #e3eaff;
+  border-radius: 0.5em;
+  width: 125px;
+  height: 2em;
+  padding: 0.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c102a;
+}
+.modal__buttons:hover {
+  background-color: #e6e9eb;
+  color: #5c102a;
+  transition-duration: 0.5s;
+  border: 1px solid #5c102a;
+}
+
+.modal__back {
+  text-decoration: none;
+  color: #e3eaff;
+  border: 0.5px solid #e3eaff;
+  border-radius: 0.5em;
+  width: 125px;
+  height: 2em;
+  padding: 0.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c102a;
+}
+.modal__back:hover {
+  background-color: #e6e9eb;
+  color: #5c102a;
+  transition-duration: 0.5s;
+  border: 1px solid #5c102a;
+}
+
+.modal__skills {
+  display: flex;
+}
+
+.buttons__skills {
+  background-color: #5c102a;
+  color: #e3eaff;
+  border: 1px solid #e3eaff;
+  padding: 0.5em;
+  margin: 0.5em;
+  border-radius: 19px;
+  font-size: 0.75em;
+  width: 100px;
+  filter: brightness(100%);
 }
 
 .information {
