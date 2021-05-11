@@ -483,13 +483,13 @@ html {
 
 .projects__layout {
   display: grid;
-  grid-template: 650px 650px/1fr 1fr;
+  grid-template: 1fr/1fr 1fr;
   grid-gap: 1em;
   justify-items: center;
   grid-template-areas: "project-1 project-2" "project-3 project-4";
 }
 
-.project {
+.project, .project__bm7 {
   width: 500px;
   height: 540px;
   max-width: 100%;
@@ -504,7 +504,7 @@ html {
   background-size: 500px;
   cursor: pointer;
 }
-.project:hover .project__view-overlay {
+.project:hover .project__view-overlay, .project__bm7:hover .project__view-overlay {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -521,23 +521,24 @@ html {
     filter: brightness(100%);
   }
 }
-
-.project__view-layout {
+.project .project__view-layout, .project__bm7 .project__view-layout {
   margin: 0;
   padding: 0;
   height: 540px;
   width: 500px;
 }
-
-.project__view figure img {
+.project .project__view figure img, .project__bm7 .project__view figure img {
   vertical-align: top;
 }
-
-.project__view-overlay {
+.project .project__view-overlay, .project__bm7 .project__view-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   display: none;
+}
+
+.project__bm7 {
+  background-image: url("../../dev/images/Desktop-bm7.png");
 }
 
 footer {
