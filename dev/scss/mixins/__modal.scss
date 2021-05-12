@@ -5,7 +5,7 @@
     display: none;
     &:target{
         position: fixed;
-        background: rgba(2,5,31,.8);
+        background: rgba(0,0,0,.7);
         top: 0;
         left: 0;
         width: 100%;
@@ -20,12 +20,12 @@
 }
 
 .modal__message{
-    background: rgba(0,0,0,.4);
+    background: rgba(2,5,31,.8);
     border: 1px solid $white-title;
     color: $white-title;
-    height: 720px;
+    //height: 770px;
+    height: 90%;
     width: 700px;
-    display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -51,15 +51,20 @@
     background-position: initial;
 }
 
+.modal__options{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
 .modal__description{
-    padding: 1em;
+    padding: 1.25em;
     width: 660px;
 }
 
 .modal__buttons{
-    @include hero-p__buttons;
-}
-.modal__back{
     @include hero-p__buttons;
 }
 

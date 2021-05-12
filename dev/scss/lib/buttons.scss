@@ -13,10 +13,9 @@
 @mixin hero-p__buttons{
     text-decoration: none;
     color: $white-title;
-    border: .5px solid $white-title;
-    border-radius: .5em;
+    border: 1px solid $white-title;
+    border-radius: 25px;
     width: 125px;
-    height: 2em;
     padding: .5em;
     display: inline-flex;
     justify-content: center;

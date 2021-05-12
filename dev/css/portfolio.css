@@ -320,10 +320,9 @@ html {
 .hero-p__buttons a {
   text-decoration: none;
   color: #e3eaff;
-  border: 0.5px solid #e3eaff;
-  border-radius: 0.5em;
+  border: 1px solid #e3eaff;
+  border-radius: 25px;
   width: 125px;
-  height: 2em;
   padding: 0.5em;
   display: inline-flex;
   justify-content: center;
@@ -375,7 +374,7 @@ html {
 }
 .modal:target {
   position: fixed;
-  background: rgba(2, 5, 31, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
   width: 100%;
@@ -389,12 +388,11 @@ html {
 }
 
 .modal__message {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(2, 5, 31, 0.8);
   border: 1px solid #e3eaff;
   color: #e3eaff;
-  height: 720px;
+  height: 90%;
   width: 700px;
-  display: flex;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -420,18 +418,25 @@ html {
   background-position: initial;
 }
 
+.modal__options {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 .modal__description {
-  padding: 1em;
+  padding: 1.25em;
   width: 660px;
 }
 
 .modal__buttons {
   text-decoration: none;
   color: #e3eaff;
-  border: 0.5px solid #e3eaff;
-  border-radius: 0.5em;
+  border: 1px solid #e3eaff;
+  border-radius: 25px;
   width: 125px;
-  height: 2em;
   padding: 0.5em;
   display: inline-flex;
   justify-content: center;
@@ -439,26 +444,6 @@ html {
   background-color: #5c102a;
 }
 .modal__buttons:hover {
-  background-color: #e6e9eb;
-  color: #5c102a;
-  transition-duration: 0.5s;
-  border: 1px solid #5c102a;
-}
-
-.modal__back {
-  text-decoration: none;
-  color: #e3eaff;
-  border: 0.5px solid #e3eaff;
-  border-radius: 0.5em;
-  width: 125px;
-  height: 2em;
-  padding: 0.5em;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #5c102a;
-}
-.modal__back:hover {
   background-color: #e6e9eb;
   color: #5c102a;
   transition-duration: 0.5s;
@@ -481,12 +466,18 @@ html {
   filter: brightness(100%);
 }
 
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
 .projects__layout {
   display: grid;
   grid-template: 1fr/1fr 1fr;
   grid-gap: 1em;
   justify-items: center;
-  grid-template-areas: "project-1 project-2" "project-3 project-4";
+  width: 80vw;
+  grid-template-areas: "project-1 project-2";
 }
 
 .project, .project__bm7 {
@@ -824,7 +815,7 @@ footer div:nth-child(2) {
 }
 .modal:target {
   position: fixed;
-  background: rgba(2, 5, 31, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   top: 0;
   left: 0;
   width: 100%;
@@ -838,12 +829,11 @@ footer div:nth-child(2) {
 }
 
 .modal__message {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(2, 5, 31, 0.8);
   border: 1px solid #e3eaff;
   color: #e3eaff;
-  height: 720px;
+  height: 90%;
   width: 700px;
-  display: flex;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -869,18 +859,25 @@ footer div:nth-child(2) {
   background-position: initial;
 }
 
+.modal__options {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 .modal__description {
-  padding: 1em;
+  padding: 1.25em;
   width: 660px;
 }
 
 .modal__buttons {
   text-decoration: none;
   color: #e3eaff;
-  border: 0.5px solid #e3eaff;
-  border-radius: 0.5em;
+  border: 1px solid #e3eaff;
+  border-radius: 25px;
   width: 125px;
-  height: 2em;
   padding: 0.5em;
   display: inline-flex;
   justify-content: center;
@@ -888,26 +885,6 @@ footer div:nth-child(2) {
   background-color: #5c102a;
 }
 .modal__buttons:hover {
-  background-color: #e6e9eb;
-  color: #5c102a;
-  transition-duration: 0.5s;
-  border: 1px solid #5c102a;
-}
-
-.modal__back {
-  text-decoration: none;
-  color: #e3eaff;
-  border: 0.5px solid #e3eaff;
-  border-radius: 0.5em;
-  width: 125px;
-  height: 2em;
-  padding: 0.5em;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #5c102a;
-}
-.modal__back:hover {
   background-color: #e6e9eb;
   color: #5c102a;
   transition-duration: 0.5s;

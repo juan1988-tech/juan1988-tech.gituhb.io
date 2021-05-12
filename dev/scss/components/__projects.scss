@@ -2,14 +2,20 @@
 @import '../lib/buttons.scss';
 @import '../mixins/__modal.scss';
 
+.projects{
+    display: flex;
+    justify-content: center;
+}
+
 .projects__layout{
     display: grid;
     grid-template: 1fr/1fr 1fr;
     grid-gap: 1em;
     justify-items: center;
-    grid-template-areas: "project-1 project-2"
-          "project-3 project-4";
-}              
+    width: 80vw;
+    grid-template-areas: "project-1 project-2";
+} 
+
 .project{
     width: 500px;
     height: 540px;
