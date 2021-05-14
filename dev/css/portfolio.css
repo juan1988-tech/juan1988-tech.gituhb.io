@@ -398,40 +398,37 @@ html {
   display: flex;
   flex-direction: column;
 }
-
-.modal__background, .modal__description {
+.modal__message .modal__background, .modal__message .modal__background-BM7, .modal__message .modal__description {
   height: 50%;
   width: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-
-.modal__background, .modal__description p {
+.modal__message .modal__background, .modal__message .modal__background-BM7, .modal__message .modal__description p {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
 }
-
-.modal__background {
+.modal__message .modal__background, .modal__message .modal__background-BM7 {
   background-image: url("../../dev/images/bicorgraph.jpg");
   background-size: 100%;
   filter: brightness(80%);
   background-position: initial;
 }
-
-.modal__options {
+.modal__message .modal__background-BM7 {
+  background-image: url("../../dev/images/Desktop-bm7.png");
+}
+.modal__message .modal__options {
   display: inline-flex;
   margin: 0;
   padding: 0;
   width: 100%;
   justify-content: space-evenly;
 }
-
-.modal__description {
+.modal__message .modal__description {
   padding: 1.25em;
   width: 660px;
 }
-
-.modal__buttons {
+.modal__message .modal__buttons {
   text-decoration: none;
   color: #e3eaff;
   border: 1px solid #e3eaff;
@@ -443,18 +440,16 @@ html {
   align-items: center;
   background-color: #5c102a;
 }
-.modal__buttons:hover {
+.modal__message .modal__buttons:hover {
   background-color: #e6e9eb;
   color: #5c102a;
   transition-duration: 0.5s;
   border: 1px solid #5c102a;
 }
-
-.modal__skills {
+.modal__message .modal__skills {
   display: flex;
 }
-
-.buttons__skills {
+.modal__message .buttons__skills {
   background-color: #5c102a;
   color: #e3eaff;
   border: 1px solid #e3eaff;
@@ -839,40 +834,37 @@ footer div:nth-child(2) {
   display: flex;
   flex-direction: column;
 }
-
-.modal__background, .modal__description {
+.modal__message .modal__background, .modal__message .modal__background-BM7, .modal__message .modal__description {
   height: 50%;
   width: 100%;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
-
-.modal__background, .modal__description p {
+.modal__message .modal__background, .modal__message .modal__background-BM7, .modal__message .modal__description p {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
 }
-
-.modal__background {
+.modal__message .modal__background, .modal__message .modal__background-BM7 {
   background-image: url("../../dev/images/bicorgraph.jpg");
   background-size: 100%;
   filter: brightness(80%);
   background-position: initial;
 }
-
-.modal__options {
+.modal__message .modal__background-BM7 {
+  background-image: url("../../dev/images/Desktop-bm7.png");
+}
+.modal__message .modal__options {
   display: inline-flex;
   margin: 0;
   padding: 0;
   width: 100%;
   justify-content: space-evenly;
 }
-
-.modal__description {
+.modal__message .modal__description {
   padding: 1.25em;
   width: 660px;
 }
-
-.modal__buttons {
+.modal__message .modal__buttons {
   text-decoration: none;
   color: #e3eaff;
   border: 1px solid #e3eaff;
@@ -884,18 +876,16 @@ footer div:nth-child(2) {
   align-items: center;
   background-color: #5c102a;
 }
-.modal__buttons:hover {
+.modal__message .modal__buttons:hover {
   background-color: #e6e9eb;
   color: #5c102a;
   transition-duration: 0.5s;
   border: 1px solid #5c102a;
 }
-
-.modal__skills {
+.modal__message .modal__skills {
   display: flex;
 }
-
-.buttons__skills {
+.modal__message .buttons__skills {
   background-color: #5c102a;
   color: #e3eaff;
   border: 1px solid #e3eaff;

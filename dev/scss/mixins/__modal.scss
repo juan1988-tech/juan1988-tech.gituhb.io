@@ -30,48 +30,52 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    .modal__background, .modal__description{
+        height: 50%;
+        width: 100%;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .modal__background, .modal__description p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1em;
+    }
+    
+    .modal__background{
+        background-image: url('../../dev/images/bicorgraph.jpg');
+        background-size: 100%;
+        filter: brightness(80%);
+        background-position: initial;
+    }
+    
+    .modal__background-BM7{
+        @extend .modal__background;
+        background-image: url('../../dev/images/Desktop-bm7.png');
+    }
+    .modal__options{
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+    .modal__description{
+        padding: 1.25em;
+        width: 660px;
+    }
+    
+    .modal__buttons{
+        @include hero-p__buttons;
+    }
+    
+    .modal__skills{
+        display: flex;
+    }
+    
+    .buttons__skills{
+        @include project__button-skill;
+    }
 }
 
-.modal__background, .modal__description{
-    height: 50%;
-    width: 100%;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-.modal__background, .modal__description p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-}
-
-.modal__background{
-    background-image: url('../../dev/images/bicorgraph.jpg');
-    background-size: 100%;
-    filter: brightness(80%);
-    background-position: initial;
-}
-
-.modal__options{
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.modal__description{
-    padding: 1.25em;
-    width: 660px;
-}
-
-.modal__buttons{
-    @include hero-p__buttons;
-}
-
-.modal__skills{
-    display: flex;
-}
-
-.buttons__skills{
-    @include project__button-skill;
-}
