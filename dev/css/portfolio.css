@@ -31,42 +31,41 @@ html {
   scroll-behavior: smooth;
 }
 
-.title_white, .title_white_h4, .title_white_h3, .title_white_h2 {
+.title_white, .title_white_skills, .title_white_h4, .title_white_skills_h4, .title_white_h3, .title_white_skills_h3, .title_white_h2, .title_white_skills_h2 {
   margin: 0;
   color: #e3eaff;
   text-align: center;
   font-size: 2.5em;
 }
 
-.title_white_h2 {
+.title_white_h2, .title_white_skills_h2 {
   font-size: 2em;
 }
 
-.title_white_h3 {
+.title_white_h3, .title_white_skills_h3 {
   font-size: 1.5em;
 }
 
-.title_white_h4 {
+.title_white_h4, .title_white_skills_h4 {
   font-size: 1em;
 }
 
-.title_red, .title_red_h4, .title_red_h3, .title_red_h2 {
+.title_red, .title_red_skills, .title_red_h4, .title_red_skills_h4, .title_red_h3, .title_red_skills_h3, .title_red_h2, .title_red_skills_h2 {
   margin: 0;
   color: #990202;
   text-align: center;
-  padding: 0.5em 0;
   font-size: 2.5em;
 }
 
-.title_red_h2 {
+.title_red_h2, .title_red_skills_h2 {
   font-size: 2em;
 }
 
-.title_red_h3 {
+.title_red_h3, .title_red_skills_h3 {
   font-size: 1.5em;
 }
 
-.title_red_h4 {
+.title_red_h4, .title_red_skills_h4 {
   font-size: 1em;
 }
 
@@ -96,6 +95,38 @@ html {
   text-indent: 1.5em;
   margin: 0px;
   padding-bottom: 0.5em;
+}
+
+.title_white_skills {
+  text-align: left;
+}
+
+.title_white_skills_h2 {
+  text-align: left;
+}
+
+.title_white_skills_h3 {
+  text-align: left;
+}
+
+.title_white_skills_h4 {
+  text-align: left;
+}
+
+.title_red_skills {
+  text-align: left;
+}
+
+.title_red_skills_h2 {
+  text-align: left;
+}
+
+.title_red_skills_h3 {
+  text-align: left;
+}
+
+.title_red_skills_h4 {
+  text-align: left;
 }
 
 .header {
@@ -188,42 +219,41 @@ html {
   transition-duration: 0.5s;
 }
 
-.title_white, .title_white_h2, .title_white_h3, .title_white_h4 {
+.title_white, .title_white_h2, .title_white_h3, .title_white_h4, .title_white_skills, .title_white_skills_h2, .title_white_skills_h3, .title_white_skills_h4 {
   margin: 0;
   color: #e3eaff;
   text-align: center;
   font-size: 2.5em;
 }
 
-.title_white_h2 {
+.title_white_h2, .title_white_skills_h2 {
   font-size: 2em;
 }
 
-.title_white_h3 {
+.title_white_h3, .title_white_skills_h3 {
   font-size: 1.5em;
 }
 
-.title_white_h4 {
+.title_white_h4, .title_white_skills_h4 {
   font-size: 1em;
 }
 
-.title_red, .title_red_h2, .title_red_h3, .title_red_h4 {
+.title_red, .title_red_h2, .title_red_h3, .title_red_h4, .title_red_skills, .title_red_skills_h2, .title_red_skills_h3, .title_red_skills_h4 {
   margin: 0;
   color: #990202;
   text-align: center;
-  padding: 0.5em 0;
   font-size: 2.5em;
 }
 
-.title_red_h2 {
+.title_red_h2, .title_red_skills_h2 {
   font-size: 2em;
 }
 
-.title_red_h3 {
+.title_red_h3, .title_red_skills_h3 {
   font-size: 1.5em;
 }
 
-.title_red_h4 {
+.title_red_h4, .title_red_skills_h4 {
   font-size: 1em;
 }
 
@@ -253,6 +283,38 @@ html {
   text-indent: 1.5em;
   margin: 0px;
   padding-bottom: 0.5em;
+}
+
+.title_white_skills {
+  text-align: left;
+}
+
+.title_white_skills_h2 {
+  text-align: left;
+}
+
+.title_white_skills_h3 {
+  text-align: left;
+}
+
+.title_white_skills_h4 {
+  text-align: left;
+}
+
+.title_red_skills {
+  text-align: left;
+}
+
+.title_red_skills_h2 {
+  text-align: left;
+}
+
+.title_red_skills_h3 {
+  text-align: left;
+}
+
+.title_red_skills_h4 {
+  text-align: left;
 }
 
 .hero {
@@ -580,231 +642,280 @@ footer div:nth-child(2) {
   padding: 1em 0px;
 }
 
-#skills-image {
-  margin: 0.5em;
-}
-
-.inline-skills {
-  display: inline-flex;
-}
-
-.list-skills {
+.skills__list-course {
+  width: 100%;
   display: grid;
-  display: grid;
-  width: 80vw;
-  grid-columns: 100px 1fr 100px 1fr;
-  grid-template-columns: 100px 1fr 100px 1fr;
-  grid-template-rows: repeat(10, 70px);
-  grid-template-areas: "wordpress wordpress-curso diseño diseño-curso" "wordpress wordpress-fecha diseño diseño-fecha" "javascript javascript-curso postcss postcss-curso" "javascript javascript-fecha postcss postcss-fecha" "gridlayout gridlayout-curso responsive responsive-curso" "gridlayout gridlayout-fecha responsive responsive-fecha" "git git-curso desarrollo desarrollo-curso" "git git-fecha desarrollo desarrollo-fecha" "fund-ing fund-ing-curso programacion programacion-curso" "fund-ing fund-ing-fecha programacion programacion-fecha";
+  border: 1px solid #e3eaff;
+  padding: 0.5em;
+  grid-gap: 0.5em;
+  grid-template: repeat(2, 50px)/100px 1fr;
+  justify-items: center;
+  grid-template-areas: "image programm-course" "image programm-date";
 }
 
-#logo {
-  padding: 1em;
-  grid-column-align: center;
-  justify-self: center;
-  grid-row-align: center;
-  align-self: center;
-}
-
-#curso {
-  grid-row-align: center;
-  align-self: center;
-}
-
-#fecha {
-  align-self: center;
-}
-
-.logo-wordpress {
+.skills__list-avatar {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
-  grid-area: wordpress;
+  border-radius: 50%;
+  grid-area: image;
+  align-content: center;
+  padding-top: 0.5em;
 }
 
-.wordpress-curso {
+.programm-course {
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: wordpress-curso;
-}
-
-.wordpress-date {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: wordpress-fecha;
-}
-
-.logo-diseño {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
-  grid-area: diseño;
+  grid-area: programm-course;
+  text-align: left;
 }
 
-.diseño-curso {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: diseño-curso;
-}
-
-.diseño-date {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  grid-area: diseño-fecha;
-}
-
-.logo-javascript {
+.programm-date {
   -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: javascript;
-}
-
-.javascript-curso {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: javascript-curso;
-}
-
-.javascript-date {
-  -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  grid-area: javascript-fecha;
-}
-
-.logo-postcss {
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
-  grid-area: postcss;
+  grid-area: programm-date;
+  text-align: left;
 }
 
-.postcss-curso {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
-  grid-area: postcss-curso;
+.skills__list-avatar {
+  margin: 0px;
 }
 
-.postcss-date {
-  -ms-grid-row: 4;
-  -ms-grid-column: 4;
-  grid-area: postcss-fecha;
+/* 
+#skills-image{
+    margin: .5em;
+}
+.inline-skills{
+    display: inline-flex;
 }
 
-.logo-gridlayout {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: gridlayout;
+.list-skills{
+    display: grid;
+    display: grid;
+    width: 80vw;
+    grid-columns: 100px 1fr 100px 1fr;
+    grid-template-columns: 100px 1fr 100px 1fr;
+    grid-template-rows: repeat(10,70px);
+        grid-template-areas: "wordpress wordpress-curso diseño diseño-curso"
+                         "wordpress wordpress-fecha diseño diseño-fecha"
+                         "javascript javascript-curso postcss postcss-curso"
+                        "javascript javascript-fecha postcss postcss-fecha"
+                        "gridlayout gridlayout-curso responsive responsive-curso"
+                        "gridlayout gridlayout-fecha responsive responsive-fecha"
+                        "git git-curso desarrollo desarrollo-curso"
+                        "git git-fecha desarrollo desarrollo-fecha"
+                        "fund-ing fund-ing-curso programacion programacion-curso"
+                        "fund-ing fund-ing-fecha programacion programacion-fecha"    ;
 }
 
-.gridlayout-curso {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: gridlayout-curso;
+
+#logo{
+    padding: 1em;
+    grid-column-align: center;
+    justify-self: center;
+    grid-row-align: center;
+    align-self: center;
 }
 
-.gridlayout-date {
-  -ms-grid-row: 6;
-  -ms-grid-column: 2;
-  grid-area: gridlayout-fecha;
+#curso{
+    grid-row-align: center;
+    align-self: center;
 }
 
-.logo-responsive {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: responsive;
+#fecha{
+    -ms-grid-row-align: center;
+        align-self: center;
 }
 
-.responsive-curso {
-  -ms-grid-row: 5;
-  -ms-grid-column: 4;
-  grid-area: responsive-curso;
+.logo-wordpress{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: wordpress;
 }
 
-.responsive-date {
-  -ms-grid-row: 6;
-  -ms-grid-column: 4;
-  grid-area: responsive-fecha;
+.wordpress-curso{
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: wordpress-curso;
 }
 
-.logo-git {
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: git;
+.wordpress-date{
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: wordpress-fecha;
 }
 
-.git-curso {
-  -ms-grid-row: 7;
-  -ms-grid-column: 2;
-  grid-area: git-curso;
+.logo-diseño{
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: diseño;
 }
 
-.git-date {
-  -ms-grid-row: 8;
-  -ms-grid-column: 2;
-  grid-area: git-fecha;
+.diseño-curso{
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    grid-area: diseño-curso;
 }
 
-.logo-desarrollo {
-  -ms-grid-row: 7;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: desarrollo;
+.diseño-date{
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+    grid-area: diseño-fecha;
 }
 
-.desarrollo-curso {
-  -ms-grid-row: 7;
-  -ms-grid-column: 4;
-  grid-area: desarrollo-curso;
+.logo-javascript{
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: javascript;
+}
+.javascript-curso{
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: javascript-curso;
 }
 
-.desarrollo-date {
-  -ms-grid-row: 8;
-  -ms-grid-column: 4;
-  grid-area: desarrollo-fecha;
+.javascript-date{
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: javascript-fecha;
 }
 
-.logo-fund-ing {
-  -ms-grid-row: 9;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
-  grid-area: fund-ing;
+.logo-postcss{
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: postcss
 }
 
-.fund-ing-curso {
-  -ms-grid-row: 9;
-  -ms-grid-column: 2;
-  grid-area: fund-ing-curso;
+.postcss-curso{
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+    grid-area: postcss-curso;
 }
 
-.fund-ing-date {
-  -ms-grid-row: 10;
-  -ms-grid-column: 2;
-  grid-area: fund-ing-fecha;
+.postcss-date{
+    -ms-grid-row: 4;
+    -ms-grid-column: 4;
+    grid-area: postcss-fecha;
 }
 
-.logo-programacion {
-  -ms-grid-row: 9;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: programacion;
+.logo-gridlayout{
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: gridlayout;
 }
 
-.programacion-curso {
-  -ms-grid-row: 9;
-  -ms-grid-column: 4;
-  grid-area: programacion-curso;
+.gridlayout-curso{
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    grid-area: gridlayout-curso;
 }
 
-.programacion-date {
-  grid-row: 10;
-  grid-column: 4;
-  grid-area: programacion-fecha;
+.gridlayout-date{
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    grid-area: gridlayout-fecha;
 }
 
+.logo-responsive{
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: responsive;
+}
+
+.responsive-curso{
+    -ms-grid-row: 5;
+    -ms-grid-column: 4;
+    grid-area: responsive-curso;
+}
+
+.responsive-date{
+    -ms-grid-row: 6;
+    -ms-grid-column: 4;
+    grid-area: responsive-fecha;
+}
+
+.logo-git{
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: git;
+}
+
+.git-curso{
+    -ms-grid-row: 7;
+    -ms-grid-column: 2;
+    grid-area: git-curso;
+}
+
+.git-date{
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    grid-area: git-fecha;
+}
+
+.logo-desarrollo{
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: desarrollo;
+}
+
+.desarrollo-curso{
+    -ms-grid-row: 7;
+    -ms-grid-column: 4;
+    grid-area: desarrollo-curso;
+}
+
+.desarrollo-date{
+    -ms-grid-row: 8;
+    -ms-grid-column: 4;
+    grid-area: desarrollo-fecha;
+}
+
+.logo-fund-ing{
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: fund-ing;
+}
+
+.fund-ing-curso{
+    -ms-grid-row: 9;
+    -ms-grid-column: 2;
+    grid-area: fund-ing-curso;
+}
+
+.fund-ing-date{
+    -ms-grid-row: 10;
+    -ms-grid-column: 2;
+    grid-area: fund-ing-fecha;
+}
+
+.logo-programacion{
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: programacion;
+}
+
+.programacion-curso{
+    -ms-grid-row: 9;
+    -ms-grid-column: 4;
+    grid-area: programacion-curso;
+}
+
+.programacion-date{
+    grid-row: 10;
+    grid-column: 4;
+    grid-area: programacion-fecha;
+}
+ */
 .modal {
   display: none;
 }

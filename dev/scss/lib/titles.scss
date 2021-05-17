@@ -24,7 +24,6 @@ font-size: $title_h1;
 margin: 0;
 color: $red-title;
 text-align: center;
-padding: .5em 0;
 font-size: $title_h1;     
 }
 
@@ -70,3 +69,48 @@ font-size: $title_h1;
     margin: 0px;
     padding-bottom: .5em;
 }
+
+
+//titles of skills section
+
+.title_white_skills{
+    @extend .title_white;
+    text-align: left;
+}
+
+.title_white_skills_h2{
+    @extend .title_white_h2;
+    text-align: left;
+}
+
+.title_white_skills_h3{
+    @extend .title_white_h3;
+    text-align: left;
+}
+
+.title_white_skills_h4{
+    @extend .title_white_h4;
+    text-align: left;
+}
+
+
+.title_red_skills{
+    @extend .title_red;
+    text-align: left;
+}
+
+.title_red_skills_h2{
+    @extend .title_red_h2;
+    text-align: left;
+}
+
+.title_red_skills_h3{
+    @extend .title_red_h3;
+    text-align: left;
+}
+
+.title_red_skills_h4{
+    @extend .title_red_h4;
+    text-align: left;
+}
+

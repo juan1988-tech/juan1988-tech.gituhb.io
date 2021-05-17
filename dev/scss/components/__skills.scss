@@ -9,7 +9,42 @@
     justify-content: center;
     align-items: center;
     padding: 1em 0px;
+    //width: 100%;
 }
+.skills__list-course{
+    width: 100%;
+    display: grid;
+    border: 1px solid $white-title;
+    padding: .5em;
+    grid-gap: .5em;
+    grid-template: repeat(2,50px) /100px 1fr;
+    justify-items: center;
+    grid-template-areas: "image programm-course" 
+                         "image programm-date";
+}
+
+.skills__list-avatar{
+    border-radius: 50%;
+    grid-area: image;
+    align-content: center;
+    padding-top:.5em;
+}
+
+.programm-course{
+    grid-area: programm-course;
+    text-align: left;
+}
+
+.programm-date{
+    grid-area: programm-date;
+    text-align: left;
+}
+
+.skills__list-avatar{
+    margin: 0px;
+}
+
+/* 
 #skills-image{
     margin: .5em;
 }
@@ -243,3 +278,4 @@
     grid-column: 4;
     grid-area: programacion-fecha;
 }
+ */
