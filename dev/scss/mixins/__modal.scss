@@ -66,6 +66,10 @@
         width: 660px;
     }
     
+    .modal__description p{
+        margin: 0.25em;
+    }
+
     .modal__buttons{
         @include hero-p__buttons;
     }

@@ -6,44 +6,98 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     padding: 1em 0px;
-    //width: 100%;
+    width: 100vw;
 }
 .skills__list-course{
     width: 100%;
     display: grid;
+    background-color: rgba(0,0,0,.5);
+    padding: 1em;
     border: 1px solid $white-title;
     padding: .5em;
     grid-gap: .5em;
-    grid-template: repeat(2,50px) /100px 1fr;
+    grid-template: repeat(6,44px) 20px/74px 1fr 74px 1fr;
     justify-items: center;
-    grid-template-areas: "image programm-course" 
-                         "image programm-date";
+    justify-content: center;
+    grid-template-areas: "programm__image programm__course uxui__image uxui__course"
+                         "programm__image programm__date uxui__image uxui__date"
+                         "js__image js__course adobe__image adobe__course"
+                         "js__image js__date adobe__image adobe__date"
+                         "sass__image sass__course designs__image designs__course"
+                         "sass__image sass__date  designs__image designs__date";
 }
 
-.skills__list-avatar{
-    border-radius: 50%;
-    grid-area: image;
-    align-content: center;
-    padding-top:.5em;
+.programm__image{
+    grid-area: programm__image;
+    margin: 0;
 }
 
-.programm-course{
-    grid-area: programm-course;
-    text-align: left;
+.programm__course{
+    grid-area: programm__course;
 }
 
-.programm-date{
-    grid-area: programm-date;
-    text-align: left;
+.programm__date{
+    grid-area: programm__date;
 }
 
-.skills__list-avatar{
-    margin: 0px;
+.uxui__image{
+    grid-area: uxui__image;
+    margin: 0;
 }
 
+.uxui__course{
+    grid-area: uxui__course;
+}
+
+.uxui__date{
+    grid-area: uxui__date;
+}
+
+.js__image{
+    grid-area: js__image;
+}
+.js__course{
+    grid-area: js__course;
+}
+
+.js__date{
+    grid-area: js__date;
+}
+
+.adobe__course{
+    grid-area: adobe__course;
+}
+
+.adobe__date{
+    grid-area: adobe__date;
+}
+
+.sass__image{
+    grid-area: sass__image;
+}
+
+.sass__course{
+    grid-area: sass__course;
+}
+
+.sass__date{
+    grid-area: sass__date;
+}
+
+.designs__image{
+    grid-area: designs__image;
+}
+
+.designs__course{
+    grid-area: designs__course;
+}
+
+.designs__date{
+    grid-area: designs__date;
+}
 /* 
 #skills-image{
     margin: .5em;

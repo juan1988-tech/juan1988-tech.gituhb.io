@@ -490,6 +490,9 @@ html {
   padding: 1.25em;
   width: 660px;
 }
+.modal__message .modal__description p {
+  margin: 0.25em;
+}
 .modal__message .modal__buttons {
   text-decoration: none;
   color: #e3eaff;
@@ -640,45 +643,130 @@ footer div:nth-child(2) {
   justify-content: center;
   align-items: center;
   padding: 1em 0px;
+  width: 100vw;
 }
 
 .skills__list-course {
   width: 100%;
   display: grid;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
   border: 1px solid #e3eaff;
   padding: 0.5em;
   grid-gap: 0.5em;
-  grid-template: repeat(2, 50px)/100px 1fr;
+  grid-template: repeat(6, 44px) 20px/74px 1fr 74px 1fr;
   justify-items: center;
-  grid-template-areas: "image programm-course" "image programm-date";
+  justify-content: center;
+  grid-template-areas: "programm__image programm__course uxui__image uxui__course" "programm__image programm__date uxui__image uxui__date" "js__image js__course adobe__image adobe__course" "js__image js__date adobe__image adobe__date" "sass__image sass__course designs__image designs__course" "sass__image sass__date  designs__image designs__date";
 }
 
-.skills__list-avatar {
+.programm__image {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
-  border-radius: 50%;
-  grid-area: image;
-  align-content: center;
-  padding-top: 0.5em;
+  grid-area: programm__image;
+  margin: 0;
 }
 
-.programm-course {
+.programm__course {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
-  grid-area: programm-course;
-  text-align: left;
+  grid-area: programm__course;
 }
 
-.programm-date {
+.programm__date {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
-  grid-area: programm-date;
-  text-align: left;
+  grid-area: programm__date;
 }
 
-.skills__list-avatar {
-  margin: 0px;
+.uxui__image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  grid-area: uxui__image;
+  margin: 0;
+}
+
+.uxui__course {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: uxui__course;
+}
+
+.uxui__date {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: uxui__date;
+}
+
+.js__image {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: js__image;
+}
+
+.js__course {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: js__course;
+}
+
+.js__date {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: js__date;
+}
+
+.adobe__course {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+  grid-area: adobe__course;
+}
+
+.adobe__date {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+  grid-area: adobe__date;
+}
+
+.sass__image {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: sass__image;
+}
+
+.sass__course {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+  grid-area: sass__course;
+}
+
+.sass__date {
+  -ms-grid-row: 11;
+  -ms-grid-column: 3;
+  grid-area: sass__date;
+}
+
+.designs__image {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  grid-area: designs__image;
+}
+
+.designs__course {
+  -ms-grid-row: 9;
+  -ms-grid-column: 7;
+  grid-area: designs__course;
+}
+
+.designs__date {
+  -ms-grid-row: 11;
+  -ms-grid-column: 7;
+  grid-area: designs__date;
 }
 
 /* 
@@ -974,6 +1062,9 @@ footer div:nth-child(2) {
 .modal__message .modal__description {
   padding: 1.25em;
   width: 660px;
+}
+.modal__message .modal__description p {
+  margin: 0.25em;
 }
 .modal__message .modal__buttons {
   text-decoration: none;
