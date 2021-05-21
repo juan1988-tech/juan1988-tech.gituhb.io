@@ -141,6 +141,7 @@ html {
   width: 100vw;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .header a {
@@ -338,7 +339,7 @@ html {
 
 .hero__portrait-information {
   width: 100%;
-  height: 270px;
+  height: 400px;
   padding: 1em;
   display: flex;
   flex-direction: row;
@@ -352,12 +353,20 @@ html {
   align-items: center;
   justify-content: center;
   padding: 1em;
+  background-image: url("../../dev/images/bubble-red.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 65%;
 }
 
 .hero-p {
-  display: block;
+  display: flex;
   width: 40vw;
-  text-align: center;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding: 1em;
 }
 
@@ -366,12 +375,15 @@ html {
   margin: 1em;
   align-items: center;
   justify-content: center;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  letter-spacing: 0.2px;
 }
 
 .hero-p__buttons {
   width: 40vw;
   display: inline-flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 1em;
 }
 
@@ -453,8 +465,8 @@ html {
   background: rgba(2, 5, 31, 0.8);
   border: 1px solid #e3eaff;
   color: #e3eaff;
-  height: 90%;
-  width: 700px;
+  height: 70%;
+  width: 660px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -524,6 +536,12 @@ html {
   font-size: 0.75em;
   width: 100px;
   filter: brightness(100%);
+}
+
+.modal__functions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .projects {
@@ -634,6 +652,97 @@ footer div:nth-child(2) {
   text-align: center;
 }
 
+.header {
+  background-color: #02051f;
+  color: #e3eaff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  height: 100px;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.cabecera-1 {
+  margin: 0em 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo {
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: row;
+  height: 100px;
+}
+
+.header__logo-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.header__logo-figure {
+  padding: 1em;
+  height: inherit;
+  margin: 0px;
+}
+
+.header__navigator {
+  display: flex;
+  width: auto;
+  margin: 0px 40px;
+  height: inherit;
+}
+
+.header__navigator nav {
+  justify-content: space-evenly;
+  height: inherit;
+}
+
+.header__navigator nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  height: inherit;
+}
+
+.header__navigator ul li {
+  list-style: none;
+  padding: 0px 10px 0px 10px;
+  height: 100%;
+}
+
+.header__navigator ul li a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #e3eaff;
+  align-items: center;
+  height: inherit;
+  justify-content: center;
+  /* border: 1px solid red; */
+  width: 111px;
+}
+
+.header__navigator ul li a:hover {
+  color: #990202;
+  transition-duration: 0.5s;
+}
+
 .skills-section {
   background-color: #151834;
   color: #e3eaff;
@@ -647,17 +756,14 @@ footer div:nth-child(2) {
 }
 
 .skills__list-course {
-  width: 100%;
+  width: 75vw;
   display: grid;
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 1em;
-  border: 1px solid #e3eaff;
   padding: 0.5em;
   grid-gap: 0.5em;
+  justify-items: left;
   grid-template: repeat(6, 44px) 20px/74px 1fr 74px 1fr;
-  justify-items: center;
-  justify-content: center;
-  grid-template-areas: "programm__image programm__course uxui__image uxui__course" "programm__image programm__date uxui__image uxui__date" "js__image js__course adobe__image adobe__course" "js__image js__date adobe__image adobe__date" "sass__image sass__course designs__image designs__course" "sass__image sass__date  designs__image designs__date";
+  grid-template-areas: "programm__image programm__course uxui__image uxui__course" "programm__image programm__date uxui__image uxui__date" "js__image js__course adobe__image adobe__course" "js__image js__date adobe__image adobe__date" "sass__image sass__course designs__image designs__course" "sass__image sass__date  designs__image designs__date" ". perfil . .";
 }
 
 .programm__image {
@@ -705,6 +811,7 @@ footer div:nth-child(2) {
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: js__image;
+  margin: 0;
 }
 
 .js__course {
@@ -731,11 +838,20 @@ footer div:nth-child(2) {
   grid-area: adobe__date;
 }
 
+.adobe__image {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  grid-area: adobe__image;
+  margin: 0;
+}
+
 .sass__image {
   -ms-grid-row: 9;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
   grid-area: sass__image;
+  margin: 0;
 }
 
 .sass__course {
@@ -755,6 +871,7 @@ footer div:nth-child(2) {
   -ms-grid-row-span: 3;
   -ms-grid-column: 5;
   grid-area: designs__image;
+  margin: 0;
 }
 
 .designs__course {
@@ -769,241 +886,19 @@ footer div:nth-child(2) {
   grid-area: designs__date;
 }
 
-/* 
-#skills-image{
-    margin: .5em;
+.skills__list-course a {
+  -ms-grid-row: 13;
+  -ms-grid-column: 3;
+  color: #e3eaff;
+  text-decoration: none;
+  grid-area: perfil;
+  text-indent: 1em;
 }
-.inline-skills{
-    display: inline-flex;
-}
-
-.list-skills{
-    display: grid;
-    display: grid;
-    width: 80vw;
-    grid-columns: 100px 1fr 100px 1fr;
-    grid-template-columns: 100px 1fr 100px 1fr;
-    grid-template-rows: repeat(10,70px);
-        grid-template-areas: "wordpress wordpress-curso diseño diseño-curso"
-                         "wordpress wordpress-fecha diseño diseño-fecha"
-                         "javascript javascript-curso postcss postcss-curso"
-                        "javascript javascript-fecha postcss postcss-fecha"
-                        "gridlayout gridlayout-curso responsive responsive-curso"
-                        "gridlayout gridlayout-fecha responsive responsive-fecha"
-                        "git git-curso desarrollo desarrollo-curso"
-                        "git git-fecha desarrollo desarrollo-fecha"
-                        "fund-ing fund-ing-curso programacion programacion-curso"
-                        "fund-ing fund-ing-fecha programacion programacion-fecha"    ;
+.skills__list-course a:hover {
+  color: #990202;
+  transition-duration: 0.5s;
 }
 
-
-#logo{
-    padding: 1em;
-    grid-column-align: center;
-    justify-self: center;
-    grid-row-align: center;
-    align-self: center;
-}
-
-#curso{
-    grid-row-align: center;
-    align-self: center;
-}
-
-#fecha{
-    -ms-grid-row-align: center;
-        align-self: center;
-}
-
-.logo-wordpress{
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: wordpress;
-}
-
-.wordpress-curso{
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: wordpress-curso;
-}
-
-.wordpress-date{
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: wordpress-fecha;
-}
-
-.logo-diseño{
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    grid-area: diseño;
-}
-
-.diseño-curso{
-    -ms-grid-row: 1;
-    -ms-grid-column: 4;
-    grid-area: diseño-curso;
-}
-
-.diseño-date{
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    grid-area: diseño-fecha;
-}
-
-.logo-javascript{
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: javascript;
-}
-.javascript-curso{
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-    grid-area: javascript-curso;
-}
-
-.javascript-date{
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    grid-area: javascript-fecha;
-}
-
-.logo-postcss{
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    grid-area: postcss
-}
-
-.postcss-curso{
-    -ms-grid-row: 3;
-    -ms-grid-column: 4;
-    grid-area: postcss-curso;
-}
-
-.postcss-date{
-    -ms-grid-row: 4;
-    -ms-grid-column: 4;
-    grid-area: postcss-fecha;
-}
-
-.logo-gridlayout{
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: gridlayout;
-}
-
-.gridlayout-curso{
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    grid-area: gridlayout-curso;
-}
-
-.gridlayout-date{
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    grid-area: gridlayout-fecha;
-}
-
-.logo-responsive{
-    -ms-grid-row: 5;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    grid-area: responsive;
-}
-
-.responsive-curso{
-    -ms-grid-row: 5;
-    -ms-grid-column: 4;
-    grid-area: responsive-curso;
-}
-
-.responsive-date{
-    -ms-grid-row: 6;
-    -ms-grid-column: 4;
-    grid-area: responsive-fecha;
-}
-
-.logo-git{
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: git;
-}
-
-.git-curso{
-    -ms-grid-row: 7;
-    -ms-grid-column: 2;
-    grid-area: git-curso;
-}
-
-.git-date{
-    -ms-grid-row: 8;
-    -ms-grid-column: 2;
-    grid-area: git-fecha;
-}
-
-.logo-desarrollo{
-    -ms-grid-row: 7;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    grid-area: desarrollo;
-}
-
-.desarrollo-curso{
-    -ms-grid-row: 7;
-    -ms-grid-column: 4;
-    grid-area: desarrollo-curso;
-}
-
-.desarrollo-date{
-    -ms-grid-row: 8;
-    -ms-grid-column: 4;
-    grid-area: desarrollo-fecha;
-}
-
-.logo-fund-ing{
-    -ms-grid-row: 9;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    grid-area: fund-ing;
-}
-
-.fund-ing-curso{
-    -ms-grid-row: 9;
-    -ms-grid-column: 2;
-    grid-area: fund-ing-curso;
-}
-
-.fund-ing-date{
-    -ms-grid-row: 10;
-    -ms-grid-column: 2;
-    grid-area: fund-ing-fecha;
-}
-
-.logo-programacion{
-    -ms-grid-row: 9;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    grid-area: programacion;
-}
-
-.programacion-curso{
-    -ms-grid-row: 9;
-    -ms-grid-column: 4;
-    grid-area: programacion-curso;
-}
-
-.programacion-date{
-    grid-row: 10;
-    grid-column: 4;
-    grid-area: programacion-fecha;
-}
- */
 .modal {
   display: none;
 }
@@ -1026,8 +921,8 @@ footer div:nth-child(2) {
   background: rgba(2, 5, 31, 0.8);
   border: 1px solid #e3eaff;
   color: #e3eaff;
-  height: 90%;
-  width: 700px;
+  height: 70%;
+  width: 660px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -1097,6 +992,12 @@ footer div:nth-child(2) {
   font-size: 0.75em;
   width: 100px;
   filter: brightness(100%);
+}
+
+.modal__functions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .information {

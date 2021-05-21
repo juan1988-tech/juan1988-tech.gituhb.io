@@ -24,8 +24,8 @@
     border: 1px solid $white-title;
     color: $white-title;
     //height: 770px;
-    height: 90%;
-    width: 700px;
+    height: 70%;
+    width: 660px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -81,5 +81,11 @@
     .buttons__skills{
         @include project__button-skill;
     }
+}
+
+.modal__functions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
