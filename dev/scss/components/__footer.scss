@@ -1,23 +1,32 @@
-footer
-{
-padding: 2em 0;    
+footer{
 background-color: #02051f; 
 color: #e3eaff;
 display: flex;
-justify-content: space-evenly;
-flex-wrap: wrap;
-flex-direction: row;
-height: 340px;
-width: 100%;
+flex-direction: column;
+height: 320px;
 align-items: center;
-line-height: 1em;
-letter-spacing: 0.1px; 
-height: auto;   
 }
 
-footer div
+footer p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25em;
+    letter-spacing: .2px;
+    margin: 0px;
+    
+}
+
+.footer__data{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+/* footer div
 {
-height: auto;  
+height: auto;
 display: flex;
 flex-direction: row;
 justify-content: space-evenly; 
@@ -45,3 +54,4 @@ footer div:nth-child(2)
 display: block;
 text-align: center; 
 }
+ */
