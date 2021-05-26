@@ -65,7 +65,21 @@ justify-content: center;
 font-size: 1.25em;
 line-height: 1.25em;
 letter-spacing: .2px;
+animation: textIlumination;
+animation-duration: 3s;
 }
+
+@keyframes textIlumination {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
 
 .hero-p__buttons{
     width: 40vw;
