@@ -1,7 +1,17 @@
 footer{
-background-color: #02051f; 
-color: #e3eaff;
+    background-color: #02051f; 
+    color: #e3eaff;
+    height: 300px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__grid{
 display: grid;
+width: 80%;
 flex-direction: column;
 height: 300px;
 grid-template-columns: [column__initial] 1fr [line__column-1] 1fr [line__column-2] 1fr [line__column-3];
@@ -32,6 +42,10 @@ footer p{
     grid-row: row__initial/ line__row-1;
 }
 
+.contact-title h1{
+    margin: 0;
+}
+
 .footer__data-email{
     @extend .footer__data;
     grid-column: column__initial/ line__column-1;
@@ -50,6 +64,18 @@ footer p{
     grid-row: line__row-1/ line__row-2;
 }
 
+.footer__credits-socialMedia{
+    grid-column: line__column-1/line__column-2;
+    grid-row: line__row-2/line__row-3;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width:60%;
+}
+
+.footer__credits-socialMedia img{
+    border-radius: 50%;
+}
+
 .footer__credits{
     grid-column: line__column-2/line__column-3;
     grid-row: line__row-2/line__row-3;
@@ -58,3 +84,4 @@ footer p{
     justify-self: center;
     padding: 1em;
 }
+
