@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import '../mixins/__mixins.scss';
 
 h1,
 h2,
@@ -23,8 +24,7 @@ list-style: none;
 span{
     font-family: 'Roboto', sans-serif;
 }
-body
-{
+body{
 background-color:$background-white;   
 width: auto;
 margin: 0;
