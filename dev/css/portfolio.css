@@ -528,9 +528,8 @@ html {
 .projects__layout {
   display: grid;
   grid-template: 1fr/1fr 1fr;
-  grid-gap: 1em;
   justify-items: center;
-  width: 80vw;
+  width: 100vw;
   grid-template-areas: "project-1 project-2";
 }
 
@@ -615,10 +614,13 @@ footer p {
   margin: 0px;
 }
 
+.footer__grid div figure {
+  margin: 1em;
+}
+
 .footer__data, .footer__data-location, .footer__data-cellphone, .footer__data-email {
   display: flex;
   align-items: center;
-  width: 30%;
   flex-direction: row;
   justify-content: space-between;
   margin: 1em 0;
@@ -781,6 +783,11 @@ footer p {
   justify-items: left;
   grid-template: repeat(6, 44px) 20px/74px 1fr 74px 1fr;
   grid-template-areas: "programm__image programm__course uxui__image uxui__course" "programm__image programm__date uxui__image uxui__date" "js__image js__course adobe__image adobe__course" "js__image js__date adobe__image adobe__date" "sass__image sass__course designs__image designs__course" "sass__image sass__date  designs__image designs__date" ". perfil . .";
+}
+@media only screen and (max-width: 1200px) {
+  .skills__list-course {
+    width: 90vw;
+  }
 }
 
 .programm__image {

@@ -1,6 +1,7 @@
 @import '../lib/variables.scss';
 @import '../lib/buttons.scss';
 @import '../mixins/__modal.scss';
+@import '../mixins/__mixins.scss';
 
 .projects{
     display: flex;
@@ -10,9 +11,8 @@
 .projects__layout{
     display: grid;
     grid-template: 1fr/1fr 1fr;
-    grid-gap: 1em;
     justify-items: center;
-    width: 80vw;
+    width: 100vw;
     grid-template-areas: "project-1 project-2";
 } 
 

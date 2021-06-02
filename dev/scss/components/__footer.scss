@@ -1,3 +1,4 @@
+@import '../mixins/_mixins';
 footer{
     background-color: #02051f; 
     color: #e3eaff;
@@ -20,6 +21,7 @@ justify-items: center;
 align-items: center;
 }
 
+
 footer p{
     font-family: 'Roboto',sans-serif;
     font-size: 1.25em;
@@ -28,10 +30,13 @@ footer p{
     
 }
 
+.footer__grid  div figure{
+    margin: 1em;
+}
+
 .footer__data{
     display: flex;
     align-items: center;
-    width: 30%;
     flex-direction: row;
     justify-content: space-between;
     margin: 1em 0;
@@ -48,7 +53,7 @@ footer p{
 
 .footer__data-email{
     @extend .footer__data;
-    grid-column: column__initial/ line__column-1;
+   grid-column: column__initial/ line__column-1;
     grid-row: line__row-1/ line__row-2;
 }
 

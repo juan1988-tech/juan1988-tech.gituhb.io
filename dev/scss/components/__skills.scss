@@ -27,6 +27,9 @@
                          "sass__image sass__course designs__image designs__course"
                          "sass__image sass__date  designs__image designs__date"
                          ". perfil . .";
+    @include desktop{
+        width: 90vw;
+    }
 }
 
 .programm__image{
