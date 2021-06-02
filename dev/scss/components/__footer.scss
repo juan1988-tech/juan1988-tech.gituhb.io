@@ -1,13 +1,13 @@
 @import '../mixins/_mixins';
 footer{
-    background-color: #02051f; 
-    color: #e3eaff;
-    height: 300px;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+background-color: #02051f; 
+color: #e3eaff;
+height: 300px;
+margin: 0;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .footer__grid{
@@ -30,7 +30,6 @@ footer p{
     font-size: 1.25em;
     letter-spacing: .2px;
     margin: 0px;
-    
 }
 
 .footer__grid  div figure{
