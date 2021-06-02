@@ -25,6 +25,11 @@ body {
   width: auto;
   margin: 0;
 }
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -142,6 +147,12 @@ html {
   top: 0;
   z-index: 1;
 }
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
+}
 
 .header a {
   text-decoration: none;
@@ -180,6 +191,11 @@ html {
   width: auto;
   margin: 0px 40px;
   height: inherit;
+}
+@media only screen and (max-width: 768px) {
+  .header__navigator {
+    display: none;
+  }
 }
 
 .header__navigator nav {
@@ -344,6 +360,13 @@ html {
   flex-direction: row;
   justify-content: center;
 }
+@media only screen and (max-width: 768px) {
+  .hero__portrait-information {
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+  }
+}
 
 .hero__portrait-title {
   justify-content: center;
@@ -358,6 +381,13 @@ html {
   background-position-y: center;
   background-size: 65%;
 }
+@media only screen and (max-width: 768px) {
+  .hero__portrait-title {
+    width: 100vw;
+    padding: 0;
+    height: 20em;
+  }
+}
 
 .hero-p {
   display: flex;
@@ -367,6 +397,12 @@ html {
   justify-content: center;
   flex-direction: column;
   padding: 1em;
+}
+@media only screen and (max-width: 1200px) {
+  .hero-p {
+    width: 95vw;
+    padding: 2.5vw;
+  }
 }
 
 .hero-p p {
@@ -394,6 +430,12 @@ html {
   display: inline-flex;
   justify-content: space-around;
   padding: 1em;
+}
+@media only screen and (max-width: 768px) {
+  .hero-p__buttons {
+    width: 100vw;
+    justify-content: space-evenly;
+  }
 }
 
 .social-media-title {
@@ -532,6 +574,11 @@ html {
   width: 100vw;
   grid-template-areas: "project-1 project-2";
 }
+@media only screen and (max-width: 768px) {
+  .projects__layout {
+    grid-template: 1fr 1fr/1fr;
+  }
+}
 
 .project, .project__bm7 {
   width: 500px;
@@ -606,6 +653,11 @@ footer {
   justify-items: center;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  .footer__grid {
+    width: 90%;
+  }
+}
 
 footer p {
   font-family: "Roboto", sans-serif;
@@ -657,6 +709,11 @@ footer p {
   justify-content: space-evenly;
   width: 60%;
 }
+@media only screen and (max-width: 768px) {
+  .footer__credits-socialMedia {
+    width: 100%;
+  }
+}
 
 .footer__credits-socialMedia img {
   border-radius: 50%;
@@ -669,6 +726,12 @@ footer p {
   align-self: center;
   justify-self: center;
   padding: 1em;
+}
+@media only screen and (max-width: 768px) {
+  .footer__credits {
+    justify-self: end;
+    align-self: end;
+  }
 }
 
 .header {
@@ -684,6 +747,12 @@ footer p {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .header a {
@@ -723,6 +792,11 @@ footer p {
   width: auto;
   margin: 0px 40px;
   height: inherit;
+}
+@media only screen and (max-width: 768px) {
+  .header__navigator {
+    display: none;
+  }
 }
 
 .header__navigator nav {
@@ -784,9 +858,11 @@ footer p {
   grid-template: repeat(6, 44px) 20px/74px 1fr 74px 1fr;
   grid-template-areas: "programm__image programm__course uxui__image uxui__course" "programm__image programm__date uxui__image uxui__date" "js__image js__course adobe__image adobe__course" "js__image js__date adobe__image adobe__date" "sass__image sass__course designs__image designs__course" "sass__image sass__date  designs__image designs__date" ". perfil . .";
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 768px) {
   .skills__list-course {
-    width: 90vw;
+    width: 70vw;
+    grid-template: repeat(6, 44px) 20px/74px 1fr;
+    grid-template-areas: "programm__image programm__course" "programm__image programm__date" "uxui__image uxui__course" "uxui__image uxui__date" "js__image js__course" "js__image js__date" "adobe__image adobe__course" "adobe__image adobe__date" "sass__image sass__course" "sass__image sass__date" "designs__image designs__course" "designs__image designs__date" ". perfil";
   }
 }
 
@@ -917,6 +993,91 @@ footer p {
   text-decoration: none;
   grid-area: perfil;
   text-indent: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .programm__image {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .programm__course {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .programm__date {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .uxui__image {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .uxui__course {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+  .uxui__date {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+  }
+  .js__image {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .js__course {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+  }
+  .js__date {
+    -ms-grid-row: 11;
+    -ms-grid-column: 3;
+  }
+  .adobe__course {
+    -ms-grid-row: 13;
+    -ms-grid-column: 3;
+  }
+  .adobe__date {
+    -ms-grid-row: 15;
+    -ms-grid-column: 3;
+  }
+  .adobe__image {
+    -ms-grid-row: 13;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .sass__image {
+    -ms-grid-row: 17;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .sass__course {
+    -ms-grid-row: 17;
+    -ms-grid-column: 3;
+  }
+  .sass__date {
+    -ms-grid-row: 19;
+    -ms-grid-column: 3;
+  }
+  .designs__image {
+    -ms-grid-row: 21;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .designs__course {
+    -ms-grid-row: 21;
+    -ms-grid-column: 3;
+  }
+  .designs__date {
+    -ms-grid-row: 23;
+    -ms-grid-column: 3;
+  }
+  .skills__list-course a {
+    -ms-grid-row: 25;
+    -ms-grid-column: 3;
+  }
 }
 .skills__list-course a:hover {
   color: #990202;

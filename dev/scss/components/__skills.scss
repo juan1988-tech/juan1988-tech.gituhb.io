@@ -27,8 +27,22 @@
                          "sass__image sass__course designs__image designs__course"
                          "sass__image sass__date  designs__image designs__date"
                          ". perfil . .";
-    @include desktop{
-        width: 90vw;
+    @include tablet{
+        width: 70vw;
+        grid-template: repeat(6,44px) 20px/74px 1fr;
+        grid-template-areas: "programm__image programm__course"
+                             "programm__image programm__date"
+                             "uxui__image uxui__course"
+                             "uxui__image uxui__date"
+                             "js__image js__course"
+                             "js__image js__date"
+                             "adobe__image adobe__course"
+                             "adobe__image adobe__date"
+                             "sass__image sass__course"
+                             "sass__image sass__date"
+                             "designs__image designs__course"
+                             "designs__image designs__date"
+                             ". perfil";
     }
 }
 

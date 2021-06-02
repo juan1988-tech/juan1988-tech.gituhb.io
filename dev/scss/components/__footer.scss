@@ -19,6 +19,9 @@ grid-template-columns: [column__initial] 1fr [line__column-1] 1fr [line__column-
 grid-template-rows: [row__initial] 1fr [line__row-1] 1fr [line__row-2] 1fr [line__Row-3];
 justify-items: center;
 align-items: center;
+    @include tablet{
+        width: 90%;
+    }
 }
 
 
@@ -75,6 +78,9 @@ footer p{
     display: inline-flex;
     justify-content: space-evenly;
     width:60%;
+    @include tablet{
+        width: 100%;
+    }
 }
 
 .footer__credits-socialMedia img{
@@ -88,5 +94,9 @@ footer p{
     align-self: center;
     justify-self: center;
     padding: 1em;
+    @include tablet{
+        justify-self: end;
+        align-self: end;
+    }
 }
 

@@ -28,6 +28,9 @@ body{
 background-color:$background-white;   
 width: auto;
 margin: 0;
+@include tablet{
+    width: 100vw;
+    }
 }
 
 html{
