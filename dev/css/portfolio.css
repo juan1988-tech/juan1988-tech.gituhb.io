@@ -149,12 +149,67 @@ html {
 }
 @media only screen and (max-width: 768px) {
   .header {
-    flex-direction: column;
-    height: auto;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    width: 100%;
   }
 }
 
-.header a {
+.header__burguer_menu {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .header__burguer_menu {
+    display: block;
+    margin: 1em;
+  }
+}
+
+#header__nav-menu {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  #header__nav-menu {
+    display: block;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    background-color: #02051f;
+    color: #e3eaff;
+    justify-content: right;
+    left: -100%;
+    transition: all 500ms linear;
+    text-indent: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #header__nav-menu.active {
+    left: 0;
+  }
+}
+
+#header__nav-menu ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+#header__nav-menu ul li {
+  padding-bottom: 1em;
+}
+
+#header__nav-menu ul li a {
+  text-decoration: none;
+  color: #e3eaff;
+  width: 100%;
+}
+#header__nav-menu ul li a:hover {
+  color: #990202;
+  transition-duration: 0.5s;
+}
+
+#header a {
   text-decoration: none;
 }
 
@@ -165,11 +220,16 @@ html {
   align-items: center;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .header__logo {
   justify-content: center;
   display: inline-flex;
   flex-direction: row;
   height: 100px;
+  text-decoration: none;
 }
 
 .header__logo-titles {
@@ -184,6 +244,11 @@ html {
   padding: 1em;
   height: inherit;
   margin: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .header__logo-figure {
+    height: 75px;
+  }
 }
 
 .header__navigator {
@@ -349,7 +414,11 @@ html {
 .hero__portrait {
   width: 100vw;
   background-color: #151834;
-  padding: 1em;
+}
+@media only screen and (max-width: 768px) {
+  .hero__portrait {
+    display: none;
+  }
 }
 
 .hero__portrait-information {
@@ -415,6 +484,11 @@ html {
   letter-spacing: 0.2px;
   animation: textIlumination;
   animation-duration: 3s;
+}
+@media only screen and (max-width: 768px) {
+  .hero-p p {
+    font-size: 1em;
+  }
 }
 
 @keyframes textIlumination {
@@ -750,12 +824,67 @@ footer p {
 }
 @media only screen and (max-width: 768px) {
   .header {
-    flex-direction: column;
-    height: auto;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    width: 100%;
   }
 }
 
-.header a {
+.header__burguer_menu {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .header__burguer_menu {
+    display: block;
+    margin: 1em;
+  }
+}
+
+#header__nav-menu {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  #header__nav-menu {
+    display: block;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    background-color: #02051f;
+    color: #e3eaff;
+    justify-content: right;
+    left: -100%;
+    transition: all 500ms linear;
+    text-indent: 2.5em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #header__nav-menu.active {
+    left: 0;
+  }
+}
+
+#header__nav-menu ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+#header__nav-menu ul li {
+  padding-bottom: 1em;
+}
+
+#header__nav-menu ul li a {
+  text-decoration: none;
+  color: #e3eaff;
+  width: 100%;
+}
+#header__nav-menu ul li a:hover {
+  color: #990202;
+  transition-duration: 0.5s;
+}
+
+#header a {
   text-decoration: none;
 }
 
@@ -766,11 +895,16 @@ footer p {
   align-items: center;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .header__logo {
   justify-content: center;
   display: inline-flex;
   flex-direction: row;
   height: 100px;
+  text-decoration: none;
 }
 
 .header__logo-titles {
@@ -785,6 +919,11 @@ footer p {
   padding: 1em;
   height: inherit;
   margin: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .header__logo-figure {
+    height: 75px;
+  }
 }
 
 .header__navigator {

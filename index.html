@@ -11,14 +11,15 @@
 </head>
 <body>
     <header class="header">
-        <a class="logo" href="#" > 
+        <a class="header__burguer_menu"  id="header__burguer_menu"><img src="./dev/social-media/burguer-button.png" height="24px" width="24px"></a>
+        <a class="logo" href="#" >  
          <div class="header__logo">
             <figure class="header__logo-figure">
                 <img src="./dev/images/brand-logo.svg" height="75" width="75" />
             </figure>   
             <div class="header__logo-titles"> 
                <h3 class="title_white_h3">JUAN DAVID FRANCO</h3>
-               <h4 class="title_red_h4">Frontend Designer</h4>    
+               <h4 class="title_red_h4">Frontend Developer and web designer</h4>    
             </div>  
            </div>
          </a>  
@@ -41,11 +42,27 @@
         </nav> 
         </div>
     </header> 
+    <div id="header__nav-menu" class="active">
+        <ul>
+            <li>
+                <a href="#proyectos__experiencia">PROYECTOS</a>
+            </li>
+            <li>
+                <a href="#conocimientos">CONOCIMIENTOS</a>
+            </li>
+            <li>
+                <a href="#contactos">CONTACTO</a>
+            </li>
+            <li>
+                <a href="https://jdgamer1988.wordpress.com/juan-david-franco-cv/" target="_blank">BLOG</a>
+            </li>
+        </ul>
+    </div >    
 <section class="hero">
     <div class="hero__portrait">
         <div>
             <h2 class="title_white_h2">JUAN DAVID FRANCO</h2>
-            <h3 class="title_red_h3">Frontend Designer and Developer</h3>
+            <h3 class="title_red_h3">Frontend Developer and web designer</h3>
         </div>
         <figure id="hero-photo">
             <img src="./dev/images/brand-logo.svg" alt="foto-Juan-David" width="200px" height="200px">
@@ -68,7 +85,7 @@
                 </div>   
         </div>    
     </div>
-</section>   -->
+</section>  
 <h1 class="title_red"  id="proyectos__experiencia"> EXPERIENCIA Y PROYECTOS DESTACADOS</h1>
 <section class="projects">
     <div class="projects__layout">
@@ -242,5 +259,5 @@
             </div>
         </div>
     </section>
-</body>
+    <script src="./index.js"></script>
 </html>

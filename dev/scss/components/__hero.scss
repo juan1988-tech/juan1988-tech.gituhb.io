@@ -22,7 +22,9 @@ align-items: center;
    // border-bottom: 1px solid $white-title;
     width: 100vw;
     background-color: $background-blue;
-    padding: 1em;
+    @include tablet{
+        display: none;
+    }
 }
 
 .hero__portrait-information{
@@ -84,6 +86,9 @@ line-height: 1.25em;
 letter-spacing: .2px;
 animation: textIlumination;
 animation-duration: 3s;
+    @include tablet{
+        font-size: 1em;
+    }
 }
 
 @keyframes textIlumination {
