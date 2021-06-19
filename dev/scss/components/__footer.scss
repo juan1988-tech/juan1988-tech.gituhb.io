@@ -8,6 +8,12 @@ width: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
+@include tablet{
+height: 240px;
+}
+@include cellphone{
+    height: auto;
+}
 }
 
 .footer__grid{
@@ -20,7 +26,11 @@ grid-template-rows: [row__initial] 1fr [line__row-1] 1fr [line__row-2] 1fr [line
 justify-items: center;
 align-items: center;
     @include tablet{
-        width: 90%;
+        height: 100%;
+    }
+    @include cellphone{
+        grid-template-columns: [column__initial] 1fr [line__column-1];
+        grid-template-rows: [row__initial] 1fr [line__row-1] 1fr [line__row-2] 1fr [line__row-3] 1fr [line__row-4];
     }
 }
 
@@ -30,6 +40,9 @@ footer p{
     font-size: 1.25em;
     letter-spacing: .2px;
     margin: 0px;
+    @include tablet{
+        font-size: 1em;
+    }
 }
 
 .footer__grid  div figure{
@@ -47,6 +60,11 @@ footer p{
 .contact-title{
     grid-column: line__column-1/ line__column-2;
     grid-row: row__initial/ line__row-1;
+    @include cellphone{
+     grid-column: column__initial/line__column-1;
+     grid-row: row__initial/line__row-1;   
+     text-align: center;
+    }
 }
 
 .contact-title h1{
@@ -57,18 +75,30 @@ footer p{
     @extend .footer__data;
    grid-column: column__initial/ line__column-1;
     grid-row: line__row-1/ line__row-2;
+    @include cellphone{
+        grid-column: column__initial/ line__column-1;
+        grid-row: line__row-1/ line__row-2;
+    }
 }
 
 .footer__data-cellphone{
     @extend .footer__data;
     grid-column: line__column-1/ line__column-2;
     grid-row: line__row-1/ line__row-2;
+    @include cellphone{
+        grid-column: column__initial/ line__column-1;
+        grid-row: line__row-3/ line__row-4;
+    }
 }
 
 .footer__data-location{
     @extend .footer__data;
     grid-column: line__column-2/ line__column-3;
     grid-row: line__row-1/ line__row-2;
+    @include cellphone{
+        grid-column: column__initial/ line__column-1;
+        grid-row: line__row-2/ line__row-3;
+    }
 }
 
 .footer__credits-socialMedia{

@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <a class="header__burguer_menu"  id="header__burguer_menu"><img src="./dev/social-media/burguer-button.png" height="24px" width="24px"></a>
-        <a class="logo" href="#" >  
+        <a class="logo" href="#" id="">  
          <div class="header__logo">
             <figure class="header__logo-figure">
                 <img src="./dev/images/brand-logo.svg" height="75" width="75" />
@@ -44,53 +44,61 @@
     </header> 
     <div id="header__nav-menu" class="active">
         <ul>
-            <li>
-                <a href="#proyectos__experiencia">PROYECTOS</a>
-            </li>
-            <li>
-                <a href="#conocimientos">CONOCIMIENTOS</a>
-            </li>
-            <li>
-                <a href="#contactos">CONTACTO</a>
-            </li>
-            <li>
-                <a href="https://jdgamer1988.wordpress.com/juan-david-franco-cv/" target="_blank">BLOG</a>
-            </li>
+            <a href="#proyectos__experiencia">PROYECTOS</a>
+            
+            <a href="#conocimientos">CONOCIMIENTOS</a>
+            
+            <a href="#contactos">CONTACTO</a>
+            
+            <a href="https://jdgamer1988.wordpress.com/juan-david-franco-cv/" target="_blank">BLOG</a>
+            
         </ul>
-    </div >    
-<section class="hero">
-    <div class="hero__portrait">
-        <div>
-            <h2 class="title_white_h2">JUAN DAVID FRANCO</h2>
-            <h3 class="title_red_h3">Frontend Developer and web designer</h3>
+    </div > 
+    <section class="hero">
+        <div class="hero__portrait">
+            <div>
+                <h2 class="title_white_h2">JUAN DAVID FRANCO</h2>
+                <h3 class="title_red_h3">Frontend Developer and web designer</h3>
+            </div>
+            <figure id="hero-photo">
+                <img src="./dev/images/brand-logo.svg" alt="foto-Juan-David" width="200px" height="200px">
+            </figure>
+            
         </div>
-        <figure id="hero-photo">
-            <img src="./dev/images/brand-logo.svg" alt="foto-Juan-David" width="200px" height="200px">
-        </figure>
-        
-    </div>
-    <div class="hero__portrait-information">
-        <div class="hero__portrait-title">
-                
+        <div class="hero__portrait-information">
+            <div class="hero__portrait-title">
+                    
+            </div>
+            <div class ='hero-p'>
+                   <h1 class="title_white_h2">ACERCA DE MÍ</h1>
+                    <p>Soy Juan David Franco, diseñador frontend y desarrollador de paginas web. Tengo conocimientos en creación de interfaces de usuario, y maquetación de páginas web</p>
+                     <p>  Me caracterizo por ser una persona que busca nunca parar de aprender, busco actualizarme constantemente. Actualmente soy arquitecto frontend, pero tengo intereses en el diseño, y el desarrollo UX y UI</p>   
+                     <div class="hero-p__buttons">
+                         <a href="#proyectos__experiencia">ver proyectos</a>
+                         <a href="https://www.linkedin.com/in/jdfranco1988/" target="_blank">ver linkedin</a> 
+                     </div>
+                     <a id="proyectos__experiencia"> </a>
+                    </div>   
+            </div>    
         </div>
-        <div class ='hero-p'>
-               <h1 class="title_white_h2">ACERCA DE MÍ</h1>
-                <p>Soy Juan David Franco, diseñador frontend y desarrollador de paginas web. Tengo conocimientos en creación de interfaces de usuario, y maquetación de páginas web</p>
-                 <p>  Me caracterizo por ser una persona que busca nunca parar de aprender, busco actualizarme constantemente. Actualmente soy arquitecto frontend, pero tengo intereses en el diseño, y el desarrollo UX y UI</p>   
-                 <div class="hero-p__buttons">
-                     <a href="#proyectos__experiencia">ver proyectos</a>
-                     <a href="https://www.linkedin.com/in/jdfranco1988/" target="_blank">ver linkedin</a> 
-                 </div>
-                 <a id="proyectos__experiencia"> </a>
-                </div>   
-        </div>    
-    </div>
-</section>  
-<h1 class="title_red"  id="proyectos__experiencia"> EXPERIENCIA Y PROYECTOS DESTACADOS</h1>
-<section class="projects">
-    <div class="projects__layout">
-        <div class="project">
-                <a class="project__view" href="#modals">
+    </section>     
+    <h1 class="title_red"  id="proyectos__experiencia"> EXPERIENCIA Y PROYECTOS DESTACADOS</h1>
+    <section class="projects">
+        <div class="projects__layout">
+            <div class="project">
+                    <a class="project__view" href="#modals">
+                         <figure class="project__view-layout">
+                            <span class="project__view-overlay">
+                                <div class="project__view-firtsView">
+                                    <img src="./dev/social-media/look-image.png" height=240 width=240/>
+                                    <h4>VER PROYECTO</h4>
+                                </div>
+                            </span>
+                        </figure>
+                    </a>
+            </div>
+            <div class="project__bm7">
+                <a class="project__view" href="#modals-BM7">
                      <figure class="project__view-layout">
                         <span class="project__view-overlay">
                             <div class="project__view-firtsView">
@@ -101,163 +109,154 @@
                     </figure>
                 </a>
         </div>
-        <div class="project__bm7">
-            <a class="project__view" href="#modals-BM7">
-                 <figure class="project__view-layout">
-                    <span class="project__view-overlay">
-                        <div class="project__view-firtsView">
-                            <img src="./dev/social-media/look-image.png" height=240 width=240/>
-                            <h4>VER PROYECTO</h4>
-                        </div>
-                    </span>
-                </figure>
-            </a>
-    </div>
-    </div>
-    </div>             
-</section>   
-<section class="skills-section">
-    <h1 class="title_white" id="conocimientos">CONOCIMIENTOS ADQUIRIDOS</h1>
-    <div class="skill__list">
-        <div class="skills__list-course">
-            <figure class="programm__image">
-                <img class="skills__list-image" src="dev/images/prog-logo.png" height="70" width="70">
-            </figure>
-            <span class="programm__course"> 
-                <h3 class="title_white_skills_h3">CURSO GRATIS DE PROGRAMACIÓN BASICA</h3> 
-            </span>
-            <span class="programm__date">
-                <h4 class="title_red_skills_h4">Septiembre de 2019</h4>
-            </span>
-            <figure class="uxui__image">
-                <img class="skills__list-image" src="dev/images/ux-ui-logo.png" height="70" width="70">
-            </figure>
-            <span class="uxui__course"> 
-                <h3 class="title_white_skills_h3">CURSO GRATIS DE FUNDAMENTOS DE UX Y UI</h3> 
-            </span>
-            <span class="uxui__date">
-                <h4 class="title_red_skills_h4">Marzo de 2020</h4>
-            </span>
-            <figure class="js__image">
-                <img class="skills__list-image" src="dev/images/js-logo.png" height="70" width="70">
-            </figure>
-            <span class="js__course"> 
-                <h3 class="title_white_skills_h3">CURSO BÁSICO DE JAVASCRIPT</h3> 
-            </span>
-            <span class="js__date">
-                <h4 class="title_red_skills_h4">Agosto de 2020</h4>
-            </span>
-            <figure class="adobe__image">
-                <img class="skills__list-image" src="dev/images/adobe-icon.png" height="70" width="70">
-            </figure>
-            <span class="adobe__course"> 
-            <h3 class="title_white_skills_h3">CURSO BÁSICO DE ADOBE XD</h3> 
-            </span>
-            <span class="adobe__date">
-                <h4 class="title_red_skills_h4">Marzo de 2021</h4>
-            </span>
-            <figure class="sass__image">
-                <img class="skills__list-image" src="dev/images/sass-logo.png" height="70" width="70">
-            </figure>
-            <span class="sass__course"> 
-                <h3 class="title_white_skills_h3">CURSO DE SASS</h3> 
-            </span>
-            <span class="sass__date">
-                <h4 class="title_red_skills_h4">Marzo de 2021</h4>
-            </span>
-            <figure class="designs__image">
-                <img class="skills__list-image" src="dev/images/pen-design.png" height="70" width="70">
-            </figure>
-            <span class="designs__course"> 
-                <h3 class="title_white_skills_h3">CURSO DE SISTEMAS DE DISEÑO</h3> 
-            </span>
-            <span class="designs__date">
-                <h4 class="title_red_skills_h4">Marzo de 2021</h4>
-            </span>
-            <a href="https://platzi.com/p/jfranco1988/" target="_blank" class="skill__perfil">Ver perfil completo aquí =></a>
         </div>
-    </div>
-</section>
-    <footer id="contactos">
-        <div class="footer__grid">
-            <div class="contact-title">
-                <h1 class="title_white_h1">CONTACTO</h1>
-            </div> 
-             <div class="footer__data-email">
-                <figure>
-                    <img src="./dev/images/email-icon-1.png" height="20" width="24"/>
+        </div>             
+    </section> 
+    <section class="skills-section">
+        <h1 class="title_white" id="conocimientos">CONOCIMIENTOS ADQUIRIDOS</h1>
+        <div class="skill__list">
+            <div class="skills__list-course">
+                <figure class="programm__image">
+                    <img class="skills__list-image" src="dev/images/prog-logo.png" height="70" width="70">
                 </figure>
-                <p>jfrancoh5@gmail.com</p>
-            </div>
-            <div class="footer__data-cellphone">
-                <figure>
-                    <img src="./dev/images/phone-image.png" height="20" width="24"/>
+                <span class="programm__course"> 
+                    <h3 class="title_white_skills_h3">CURSO GRATIS DE PROGRAMACIÓN BASICA</h3> 
+                </span>
+                <span class="programm__date">
+                    <h4 class="title_red_skills_h4">Septiembre de 2019</h4>
+                </span>
+                <figure class="uxui__image">
+                    <img class="skills__list-image" src="dev/images/ux-ui-logo.png" height="70" width="70">
                 </figure>
-                <p>3102878262</p>
-            </div>
-            <div class="footer__data-location">
-                <figure>
-                    <img src="./dev/images/ubicacion.png" height="24" width="20"/>
+                <span class="uxui__course"> 
+                    <h3 class="title_white_skills_h3">CURSO GRATIS DE FUNDAMENTOS DE UX Y UI</h3> 
+                </span>
+                <span class="uxui__date">
+                    <h4 class="title_red_skills_h4">Marzo de 2020</h4>
+                </span>
+                <figure class="js__image">
+                    <img class="skills__list-image" src="dev/images/js-logo.png" height="70" width="70">
                 </figure>
-                <p>Bogota, Colombia</p>
+                <span class="js__course"> 
+                    <h3 class="title_white_skills_h3">CURSO BÁSICO DE JAVASCRIPT</h3> 
+                </span>
+                <span class="js__date">
+                    <h4 class="title_red_skills_h4">Agosto de 2020</h4>
+                </span>
+                <figure class="adobe__image">
+                    <img class="skills__list-image" src="dev/images/adobe-icon.png" height="70" width="70">
+                </figure>
+                <span class="adobe__course"> 
+                <h3 class="title_white_skills_h3">CURSO BÁSICO DE ADOBE XD</h3> 
+                </span>
+                <span class="adobe__date">
+                    <h4 class="title_red_skills_h4">Marzo de 2021</h4>
+                </span>
+                <figure class="sass__image">
+                    <img class="skills__list-image" src="dev/images/sass-logo.png" height="70" width="70">
+                </figure>
+                <span class="sass__course"> 
+                    <h3 class="title_white_skills_h3">CURSO DE SASS</h3> 
+                </span>
+                <span class="sass__date">
+                    <h4 class="title_red_skills_h4">Marzo de 2021</h4>
+                </span>
+                <figure class="designs__image">
+                    <img class="skills__list-image" src="dev/images/pen-design.png" height="70" width="70">
+                </figure>
+                <span class="designs__course"> 
+                    <h3 class="title_white_skills_h3">CURSO DE SISTEMAS DE DISEÑO</h3> 
+                </span>
+                <span class="designs__date">
+                    <h4 class="title_red_skills_h4">Marzo de 2021</h4>
+                </span>
+                <a href="https://platzi.com/p/jfranco1988/" target="_blank" class="skill__perfil">Ver perfil completo aquí =></a>
             </div>
-            <div class="footer__credits">
-                <p><strong>hecho por: </strong> Juan David Franco</p>
-            </div> 
-            <div class="footer__credits-socialMedia">
-                <a href="https://www.facebook.com/jdfranco1988" target="_blank"><img src='./dev/social-media/facebook.svg' height="32px" width="32px"/></a>
-                <a href="https://github.com/juan1988-tech" target="_blank"><img src='./dev/social-media/github.png' height="32px" width="32px"></a>
-                <a href="https://twitter.com/JuanDavidFran16"target="_blank"><img src='./dev/social-media/twitter.png' height="32px" width="32px"/></a>
-            </div>
-        </footer>
         </div>
-         
-    <section class="modal" id="modals">
+    </section>
+        <footer id="contactos">
+            <div class="footer__grid">
+                <div class="contact-title">
+                    <h1 class="title_white_h1">CONTACTO</h1>
+                </div> 
+                 <div class="footer__data-email">
+                    <figure>
+                        <img src="./dev/images/email-icon-1.png" height="20" width="24"/>
+                    </figure>
+                    <p>jfrancoh5@gmail.com</p>
+                </div>
+                <div class="footer__data-cellphone">
+                    <figure>
+                        <img src="./dev/images/phone-image.png" height="20" width="24"/>
+                    </figure>
+                    <p>3102878262</p>
+                </div>
+                <div class="footer__data-location">
+                    <figure>
+                        <img src="./dev/images/ubicacion.png" height="24" width="20"/>
+                    </figure>
+                    <p>Bogota, Colombia</p>
+                </div>
+                <!-- 
+                
+                <div class="footer__credits">
+                    <p><strong>hecho por: </strong> Juan David Franco</p>
+                </div> 
+                <div class="footer__credits-socialMedia">
+                    <a href="https://www.facebook.com/jdfranco1988" target="_blank"><img src='./dev/social-media/facebook.svg' height="32px" width="32px"/></a>
+                    <a href="https://github.com/juan1988-tech" target="_blank"><img src='./dev/social-media/github.png' height="32px" width="32px"></a>
+                    <a href="https://twitter.com/JuanDavidFran16"target="_blank"><img src='./dev/social-media/twitter.png' height="32px" width="32px"/></a>
+                </div> -->
+            </footer>
+            </div>
+             
+        <section class="modal" id="modals">
+                <div class="modal__message">
+                    <div class="modal__background">
+                            
+                    </div>
+                    <div class="modal__description">
+                            <h2 class="title_white_h2">Bircorgraph</h2>
+                            <p>Desarrollo de página web para consurso Olympia Platzi, creación de un e-commerce
+                                de productos ecologicos
+                            </p>
+                            <h3 class="title_white_h3">Competencias</h3>
+                            <p>adobe xd, coogle</p>
+                            <h3 class="title_white_h3">Funciones</h3>
+                            <div class="modal__functions">
+                                <p>Crear los wireframes de baja y media calidad</p>
+                                <p>Redactar el sistema de diseño</p>
+                                <p>Plantear  el modelo de negocio mediante metodología canvas</p>
+                            </div>
+                            <div class="modal__options">
+                                <a class="modal__buttons" href="https://bicorgraph.web.app" target="_blank"> ver proyecto</a>
+                                <a class="modal__buttons" href="#proyectos__experiencia">volver</a>
+                            </div>
+                    </div>
+                </div>
+        </section> 
+        <section class="modal" id="modals-BM7">
             <div class="modal__message">
-                <div class="modal__background">
+                <div class="modal__background-BM7">
                         
                 </div>
                 <div class="modal__description">
-                        <h2 class="title_white_h2">Bircorgraph</h2>
-                        <p>Desarrollo de página web para consurso Olympia Platzi, creación de un e-commerce
-                            de productos ecologicos
+                        <h2 class="title_white_h2">BM7</h2>
+                        <p>Desarrollo de página web para startup en crecimiento, de prevención de accidentes laborales 
+                            en grandres compañías, uniendo la inteligencia artificial con la psicología laboral
                         </p>
                         <h3 class="title_white_h3">Competencias</h3>
-                        <p>adobe xd, coogle</p>
+                        <p>Figma</p>
                         <h3 class="title_white_h3">Funciones</h3>
-                        <div class="modal__functions">
-                            <p>Crear los wireframes de baja y media calidad</p>
-                            <p>Redactar el sistema de diseño</p>
-                            <p>Plantear  el modelo de negocio mediante metodología canvas</p>
-                        </div>
+                        <p>Crear los Mockups del proyect</p>
+                        <p>Contribuir con el equipo frontend para la creación de componentes en react</p>
                         <div class="modal__options">
-                            <a class="modal__buttons" href="https://bicorgraph.web.app" target="_blank"> ver proyecto</a>
+                            <a class="modal__buttons" href="https://www.figma.com/file/PazjtsrM9GAEF101eapYNT/BM7?node-id=0%3A1" target="_blank"> ver proyecto</a>
                             <a class="modal__buttons" href="#proyectos__experiencia">volver</a>
                         </div>
                 </div>
             </div>
-    </section>
-    <section class="modal" id="modals-BM7">
-        <div class="modal__message">
-            <div class="modal__background-BM7">
-                    
-            </div>
-            <div class="modal__description">
-                    <h2 class="title_white_h2">BM7</h2>
-                    <p>Desarrollo de página web para startup en crecimiento, de prevención de accidentes laborales 
-                        en grandres compañías, uniendo la inteligencia artificial con la psicología laboral
-                    </p>
-                    <h3 class="title_white_h3">Competencias</h3>
-                    <p>Figma</p>
-                    <h3 class="title_white_h3">Funciones</h3>
-                    <p>Crear los Mockups del proyect</p>
-                    <p>Contribuir con el equipo frontend para la creación de componentes en react</p>
-                    <div class="modal__options">
-                        <a class="modal__buttons" href="https://www.figma.com/file/PazjtsrM9GAEF101eapYNT/BM7?node-id=0%3A1" target="_blank"> ver proyecto</a>
-                        <a class="modal__buttons" href="#proyectos__experiencia">volver</a>
-                    </div>
-            </div>
-        </div>
-    </section>
+        </section>
+
     <script src="./index.js"></script>
 </html>

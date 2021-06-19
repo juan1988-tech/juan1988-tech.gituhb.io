@@ -31,6 +31,9 @@ margin: 0;
 @include tablet{
     width: 100vw;
     }
+ @include cellphone{
+     width: 100%;
+ }   
 }
 
 html{
