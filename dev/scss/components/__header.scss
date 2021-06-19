@@ -18,8 +18,9 @@ z-index: 1;
     @include tablet{
     display: grid;
     grid-template-columns: 60px 1fr;
-    width: 100%;   
-    height: 80px;  
+    width: 100%;     
+    height: 80px;
+    align-content: center;
     }
 }
 
@@ -44,7 +45,7 @@ z-index: 1;
         background-color: $dark-blue; 
         color: $white-title;
         justify-content: right;
-        left: -100%;
+        left: 0;
         transition: all 500ms linear;
         text-indent: 2.5em;
     }
@@ -58,7 +59,7 @@ z-index: 1;
 }
 #header__nav-menu.active{
     @include tablet{
-        left: 0;
+        left: -768px;
     }
 }
 
@@ -71,17 +72,21 @@ z-index: 1;
 #header__nav-menu ul{
     margin: 0;
     padding-left: 0;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 768px;
+    grid-template-rows: repeat(4, 1fr);
+}
+#header__nav-menu ul li{
+    padding-bottom: 1em;
+    width: 100%;
 }
 
 #header__nav-menu ul a{
     text-decoration: none;
     color: #e3eaff;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    width: 768px;
     &:hover{
         color: #990202;
         transition-duration: 0.5s;
@@ -110,6 +115,9 @@ text-decoration: none;
     flex-direction: row;
     height: 80px;
     text-decoration: none;
+    @include tablet{
+        height: 80px;
+    }
 }
 
 .header__logo-titles{
@@ -119,28 +127,26 @@ text-decoration: none;
     align-items: center;
     padding: 1em;
     @include tablet{
-        padding: 0em;
+        padding: .25em;
     }
-    
 }
 
 .header__logo-figure{
     padding: 1em;
-    height: 100%;
     margin: 0px;
+    align-self: center;
     @include tablet{
         padding: 0px;
-        height: 100%;
-        align-items: center;
-        display: flex;
     }
 }
 
-.header__logo-figure img{
+.header__logo-figure img{   
+    height: 70px;
+    width: 70px;
     @include tablet{
-        height: 40px;
-        width: 40px;
-    }
+        height: 50px;
+        width: 50px;
+    } 
 }
 
 
@@ -153,7 +159,6 @@ height: inherit;
     @include tablet{
         display: none;
     }
-
 }
 
 .header__navigator nav
